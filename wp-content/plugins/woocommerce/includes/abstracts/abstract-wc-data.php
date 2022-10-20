@@ -326,6 +326,11 @@ abstract class WC_Data {
 	 * @return mixed
 	 */
 	public function get_meta( $key = '', $single = true, $context = 'view' ) {
+
+
+		//dumping
+
+		echo 'getting123';
 		if ( $this->is_internal_meta_key( $key ) ) {
 			$function = 'get_' . ltrim( $key, '_' );
 
