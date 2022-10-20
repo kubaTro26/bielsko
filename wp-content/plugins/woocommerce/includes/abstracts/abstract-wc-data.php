@@ -432,6 +432,10 @@ abstract class WC_Data {
 	 * @param  int          $meta_id Meta ID.
 	 */
 	public function update_meta_data( $key, $value, $meta_id = 0 ) {
+
+
+		echo 'updating';
+
 		if ( $this->is_internal_meta_key( $key ) ) {
 			$function = 'set_' . ltrim( $key, '_' );
 
