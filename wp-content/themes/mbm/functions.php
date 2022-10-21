@@ -103,7 +103,17 @@ function add_custom_fields_to_ajax_customer_details( $data, $customer, $user_id 
    
         $data['billing']['billing_nip'] = $customer->get_meta('nip');
         $data['billing']['billing_city'] = $customer->get_meta('city');
+        $data['billing']['billing_phone'] = $customer->get_meta('telefon');
+        $data['billing']['billing_woj'] = $customer->get_meta('wojewodztwo');
+        $data['billing']['billing_kod'] = $customer->get_meta('kod');
+        $data['billing']['firma'] = $customer->get_meta('firma');
+        $data['second_address_line']['firma'] = $customer->get_meta('second_address_line');
+        $data['first_address_line']['firma'] = $customer->get_meta('first_address_line');
+        
   
+
+
+        
 
     return $data;
 }
