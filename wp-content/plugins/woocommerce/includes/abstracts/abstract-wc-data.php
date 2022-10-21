@@ -330,9 +330,9 @@ abstract class WC_Data {
 
 		//dumping
 
-		echo '<div>';
-		var_dump(debug_backtrace());
-		echo '</div>';
+		// echo '<div>';
+		// var_dump(debug_backtrace());
+		// echo '</div>';
 		if ( $this->is_internal_meta_key( $key ) ) {
 			$function = 'get_' . ltrim( $key, '_' );
 
