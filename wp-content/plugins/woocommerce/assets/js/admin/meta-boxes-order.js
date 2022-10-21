@@ -220,9 +220,9 @@ jQuery( function ( $ ) {
 
 						console.log(response);
 
-						// if(response.meta_data[0]!=undefined){
+						
 
-						// $('#_billing_company').val(response.meta_data[0].value);
+						$('#_billing_company').val(response.billing.firma);
 						// $('#_billing_address_1').val(response.meta_data[1].value);
 						// $('#_billing_address_2').val(response.meta_data[2].value);
 						// $('#_billing_city').val(response.meta_data[3].value);
@@ -231,7 +231,7 @@ jQuery( function ( $ ) {
 						// $('#_billing_phone').val(response.meta_data[6].value);
 
 						
-						// }
+						
 
 						
 
