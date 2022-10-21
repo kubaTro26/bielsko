@@ -102,6 +102,7 @@ add_filter( 'woocommerce_ajax_get_customer_details' , 'add_custom_fields_to_ajax
 function add_custom_fields_to_ajax_customer_details( $data, $customer, $user_id ) {
    
         $data['billing']['billing_nip'] = $customer->get_meta('nip');
+        $data['billing']['billing_city'] = $customer->get_meta('city');
   
 
     return $data;
