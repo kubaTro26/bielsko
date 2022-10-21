@@ -218,7 +218,7 @@ jQuery( function ( $ ) {
 
 						$( 'div.edit_address' ).unblock();
 
-
+						console.log(response);
 
 						// if(response.meta_data[0]!=undefined){
 
