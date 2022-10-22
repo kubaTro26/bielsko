@@ -654,7 +654,7 @@ abstract class WC_Data {
 			}
 		}
 
-		var_dump($this->meta_data);
+		var_dump($raw_meta_data);
 	}
 
 	/**
