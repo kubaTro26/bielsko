@@ -108,13 +108,14 @@ class WC_Data_Store_WP {
 			)
 		);
 
-		var_dump(	$wpdb->prepare(
-			// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared
-			"SELECT * FROM `wp_users` WHERE `ID` = %d",
-			// phpcs:enable
-			$object->get_id()
-		));
+		// var_dump(	$wpdb->prepare(
+		// 	// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared
+		// 	"SELECT * FROM `wp_users` WHERE `ID` = %d",
+		// 	// phpcs:enable
+		// 	$object->get_id()
+		// ));
 
+		var_dump($object->get_id());
 
 
 		// echo 'mats1';
