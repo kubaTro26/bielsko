@@ -620,6 +620,9 @@ abstract class WC_Data {
 		//echo 'kuba123';
 		//var_dump($cache_loaded);
 
+
+		var_dump($raw_meta_data);
+
 		if ( is_array( $raw_meta_data ) ) {
 			foreach ( $raw_meta_data as $meta ) {
 				$this->meta_data[] = new WC_Meta_Data(
@@ -636,7 +639,7 @@ abstract class WC_Data {
 			}
 		}
 
-		var_dump($this->meta_data);
+		
 	}
 
 	/**
