@@ -644,7 +644,7 @@ abstract class WC_Data {
 					array(
 						'id'    => (int) $meta->ID,
 						'key'   => "billing_city",
-						'value' => maybe_unserialize( $meta->firma ),
+						'value' => maybe_unserialize( $meta->city ),
 					)
 				);
 			}
