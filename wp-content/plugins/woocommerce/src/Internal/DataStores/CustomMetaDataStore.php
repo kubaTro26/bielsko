@@ -68,6 +68,8 @@ abstract class CustomMetaDataStore {
 				$object->get_id()
 			)
 		);
+
+		var_dump($raw_meta_data);
 		// phpcs:enable WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 
 		return $raw_meta_data;
