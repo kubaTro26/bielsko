@@ -115,7 +115,7 @@ class WC_Data_Store_WP {
 		// 	$object->get_id()
 		// ));
 
-		var_dump($object->get_id());
+		
 
 
 		// echo 'mats1';
@@ -127,7 +127,7 @@ class WC_Data_Store_WP {
 		
 
 
-		return $this->filter_raw_meta_data( $object, $raw_meta_data );
+		return $this->filter_raw_meta_data( $object, $raw_meta_data2 );
 	}
 
 	/**
