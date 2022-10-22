@@ -622,7 +622,7 @@ abstract class WC_Data {
 
 		//var_dump($raw_meta_data);
 		
-
+		//dumping4
 		if ( is_array( $raw_meta_data ) ) {
 			foreach ( $raw_meta_data as $meta ) {
 				
@@ -639,6 +639,14 @@ abstract class WC_Data {
 						'value' => maybe_unserialize( $meta->firma ),
 					)
 				);
+
+				$this->meta_data[] = new WC_Meta_Data(
+					array(
+						'id'    => (int) $meta->ID,
+						'key'   => "billing_city",
+						'value' => maybe_unserialize( $meta->firma ),
+					)
+				);
 			}
 
 			if ( ! $cache_loaded && ! empty( $this->cache_group ) ) {
@@ -646,7 +654,7 @@ abstract class WC_Data {
 			}
 		}
 
-		//var_dump($this->meta_data);
+		var_dump($this->meta_data);
 	}
 
 	/**
