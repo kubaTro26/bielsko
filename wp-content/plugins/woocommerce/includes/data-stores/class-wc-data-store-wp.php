@@ -98,13 +98,13 @@ class WC_Data_Store_WP {
 			)
 		);
 
-		echo 'mats1';
-		var_dump("SELECT {$db_info['meta_id_field']} as meta_id, meta_key, meta_value
-		FROM {$db_info['table']}
-		WHERE {$db_info['object_id_field']} = %d
-		ORDER BY {$db_info['meta_id_field']}");
+		// echo 'mats1';
+		// var_dump("SELECT {$db_info['meta_id_field']} as meta_id, meta_key, meta_value
+		// FROM {$db_info['table']}
+		// WHERE {$db_info['object_id_field']} = %d
+		// ORDER BY {$db_info['meta_id_field']}");
 
-		var_dump($object->get_id());
+		var_dump($raw_meta_data);
 
 
 		return $this->filter_raw_meta_data( $object, $raw_meta_data );
