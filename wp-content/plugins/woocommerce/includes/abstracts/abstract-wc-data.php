@@ -618,6 +618,7 @@ abstract class WC_Data {
 
 
 		echo 'kuba123';
+		var_dump($raw_meta_data);
 
 		if ( is_array( $raw_meta_data ) ) {
 			foreach ( $raw_meta_data as $meta ) {
