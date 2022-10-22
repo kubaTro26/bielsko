@@ -81,6 +81,9 @@ class WC_Data_Store_WP {
 	 * @return array
 	 */
 	public function read_meta( &$object ) {
+
+
+		echo 'mats1';
 		global $wpdb;
 		$db_info       = $this->get_db_info();
 		$raw_meta_data = $wpdb->get_results(
