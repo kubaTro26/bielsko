@@ -83,7 +83,7 @@ class WC_Data_Store_WP {
 	public function read_meta( &$object ) {
 
 
-		echo 'mats1';
+		
 		global $wpdb;
 		$db_info       = $this->get_db_info();
 		$raw_meta_data = $wpdb->get_results(
@@ -97,6 +97,12 @@ class WC_Data_Store_WP {
 				$object->get_id()
 			)
 		);
+
+		echo 'mats1';
+		var_dump("SELECT {$db_info['meta_id_field']} as meta_id, meta_key, meta_value
+		FROM {$db_info['table']}
+		WHERE {$db_info['object_id_field']} = %d
+		ORDER BY {$db_info['meta_id_field']}");
 		return $this->filter_raw_meta_data( $object, $raw_meta_data );
 	}
 
