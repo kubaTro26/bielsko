@@ -616,7 +616,7 @@ abstract class WC_Data {
 		// We filter the raw meta data again when loading from cache, in case we cached in an earlier version where filter conditions were different.
 		$raw_meta_data = $cache_loaded ? $this->data_store->filter_raw_meta_data( $this, $cached_meta ) : $this->data_store->read_meta( $this );
 
-		var_dump($raw_meta_data);
+		
 		//echo 'kuba123';
 		//var_dump($cache_loaded);
 
@@ -635,6 +635,8 @@ abstract class WC_Data {
 				wp_cache_set( $cache_key, $raw_meta_data, $this->cache_group );
 			}
 		}
+
+		var_dump($this->meta_data);
 	}
 
 	/**
