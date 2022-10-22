@@ -344,10 +344,13 @@ abstract class WC_Data {
 			}
 		}
 
-		echo 'key123';
+		
 
 		$this->maybe_read_meta_data();
 		$meta_data  = $this->get_meta_data();
+
+		echo 'meta123';
+		var_dump($meta_data);
 		$array_keys = array_keys( wp_list_pluck( $meta_data, 'key' ), $key, true );
 		$value      = $single ? '' : array();
 
