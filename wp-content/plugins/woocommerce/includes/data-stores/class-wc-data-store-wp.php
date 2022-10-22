@@ -108,7 +108,12 @@ class WC_Data_Store_WP {
 			)
 		);
 
-		var_dump($raw_meta_data2);
+		var_dump(	$wpdb->prepare(
+			// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared
+			"SELECT * FROM `wp_users` WHERE `ID` = %d",
+			// phpcs:enable
+			$object->get_id()
+		));
 
 
 
