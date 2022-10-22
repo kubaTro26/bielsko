@@ -1398,7 +1398,7 @@ class wpdb {
 		}
 
 
-		var_dump($query);
+		
 
 		// This is not meant to be foolproof -- but it will catch obviously incorrect usage.
 		if ( strpos( $query, '%' ) === false ) {
