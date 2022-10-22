@@ -349,8 +349,8 @@ abstract class WC_Data {
 		$meta_data  = $this->get_meta_data();
 
 		echo 'meta123';
-		
-		var_dump($this);
+
+		var_dump();
 		$array_keys = array_keys( wp_list_pluck( $meta_data, 'key' ), $key, true );
 		$value      = $single ? '' : array();
 
@@ -589,7 +589,7 @@ abstract class WC_Data {
 	 * @since 2.6.0
 	 * @param bool $force_read True to force a new DB read (and update cache).
 	 */
-	public function read_meta_data( $force_read = false ) {
+	public function read_meta_data( $force_read = true ) {
 		$this->meta_data = array();
 		$cache_loaded    = false;
 
