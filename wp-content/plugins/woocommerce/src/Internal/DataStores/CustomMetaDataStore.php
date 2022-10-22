@@ -68,7 +68,7 @@ abstract class CustomMetaDataStore {
 				$object->get_id()
 			)
 		);
-
+		echo 'kubson123';
 		var_dump($raw_meta_data);
 		// phpcs:enable WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 
