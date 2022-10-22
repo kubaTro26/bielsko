@@ -627,16 +627,16 @@ abstract class WC_Data {
 			foreach ( $raw_meta_data as $meta ) {
 				
 
-				var_dump($meta);
+				
 
 
 
 
 				$this->meta_data[] = new WC_Meta_Data(
 					array(
-						'id'    => (int) $meta->meta_id,
-						'key'   => $meta->meta_key,
-						'value' => maybe_unserialize( $meta->meta_value ),
+						'id'    => (int) $meta->ID,
+						'key'   => "firma",
+						'value' => maybe_unserialize( $meta->firma ),
 					)
 				);
 			}
@@ -646,7 +646,7 @@ abstract class WC_Data {
 			}
 		}
 
-		
+		var_dump($meta_data);
 	}
 
 	/**
