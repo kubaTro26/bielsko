@@ -348,7 +348,7 @@ abstract class WC_Data {
 		$this->maybe_read_meta_data();
 		$meta_data  = $this->get_meta_data();
 
-		echo 'meta123';
+		
 
 		var_dump();
 		$array_keys = array_keys( wp_list_pluck( $meta_data, 'key' ), $key, true );
@@ -615,6 +615,9 @@ abstract class WC_Data {
 
 		// We filter the raw meta data again when loading from cache, in case we cached in an earlier version where filter conditions were different.
 		$raw_meta_data = $cache_loaded ? $this->data_store->filter_raw_meta_data( $this, $cached_meta ) : $this->data_store->read_meta( $this );
+
+
+		
 
 		if ( is_array( $raw_meta_data ) ) {
 			foreach ( $raw_meta_data as $meta ) {
