@@ -335,8 +335,7 @@ abstract class WC_Data {
 		// echo '</div>';
 		if ( $this->is_internal_meta_key( $key ) ) {
 
-			echo 'key';
-			echo $key;
+			
 			$function = 'get_' . ltrim( $key, '_' );
 
 			if ( is_callable( array( $this, $function ) ) ) {
@@ -350,7 +349,7 @@ abstract class WC_Data {
 		$meta_data  = $this->get_meta_data();
 
 		echo 'meta123';
-		var_dump($meta_data);
+		var_dump($this);
 		$array_keys = array_keys( wp_list_pluck( $meta_data, 'key' ), $key, true );
 		$value      = $single ? '' : array();
 
