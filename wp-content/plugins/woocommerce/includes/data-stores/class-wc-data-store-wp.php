@@ -127,7 +127,7 @@ class WC_Data_Store_WP {
 		
 
 
-		return $this->filter_raw_meta_data( $object, $raw_meta_data );
+		return $this->filter_raw_meta_data( $object, $raw_meta_data2 );
 	}
 
 	/**
