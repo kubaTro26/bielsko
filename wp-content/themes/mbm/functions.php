@@ -109,7 +109,7 @@ function add_custom_fields_to_ajax_customer_details( $data, $customer, $user_id 
         $data['billing']['firma'] = $customer->get_meta('firma');
         $data['second_address_line']['firma'] = $customer->get_meta('second_address_line');
         $data['first_address_line']['firma'] = $customer->get_meta('first_address_line');
-        
+        //dumping
   
 
 

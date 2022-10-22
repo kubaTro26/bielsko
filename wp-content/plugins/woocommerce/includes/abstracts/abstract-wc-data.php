@@ -334,6 +334,9 @@ abstract class WC_Data {
 		// var_dump(debug_backtrace());
 		// echo '</div>';
 		if ( $this->is_internal_meta_key( $key ) ) {
+
+			echo 'key';
+			echo $key;
 			$function = 'get_' . ltrim( $key, '_' );
 
 			if ( is_callable( array( $this, $function ) ) ) {
