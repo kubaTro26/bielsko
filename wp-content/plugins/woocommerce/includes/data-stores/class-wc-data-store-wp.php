@@ -124,7 +124,7 @@ class WC_Data_Store_WP {
 		// WHERE {$db_info['object_id_field']} = %d
 		// ORDER BY {$db_info['meta_id_field']}");
 
-		var_dump($raw_meta_data);
+		
 
 
 		return $this->filter_raw_meta_data( $object, $raw_meta_data );
