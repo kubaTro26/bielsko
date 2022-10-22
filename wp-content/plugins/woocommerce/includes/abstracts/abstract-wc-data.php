@@ -617,8 +617,8 @@ abstract class WC_Data {
 		$raw_meta_data = $cache_loaded ? $this->data_store->filter_raw_meta_data( $this, $cached_meta ) : $this->data_store->read_meta( $this );
 
 
-		//echo 'kuba123';
-		//var_dump($raw_meta_data);
+		echo 'kuba123';
+		var_dump($cache_loaded);
 
 		if ( is_array( $raw_meta_data ) ) {
 			foreach ( $raw_meta_data as $meta ) {

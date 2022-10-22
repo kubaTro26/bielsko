@@ -68,8 +68,8 @@ abstract class CustomMetaDataStore {
 				$object->get_id()
 			)
 		);
-		echo 'kubson123';
-		var_dump("SELECT {$db_info['meta_id_field']} AS meta_id, meta_key, meta_value FROM {$db_info['table']} WHERE {$db_info['object_id_field']} = %d ORDER BY meta_id");
+		//echo 'kubson123';
+		//var_dump("SELECT {$db_info['meta_id_field']} AS meta_id, meta_key, meta_value FROM {$db_info['table']} WHERE {$db_info['object_id_field']} = %d ORDER BY meta_id");
 		// phpcs:enable WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 
 		return $raw_meta_data;
