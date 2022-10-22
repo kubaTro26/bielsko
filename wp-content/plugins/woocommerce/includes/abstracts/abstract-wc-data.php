@@ -349,6 +349,7 @@ abstract class WC_Data {
 		$meta_data  = $this->get_meta_data();
 
 		echo 'meta123';
+		
 		var_dump($this);
 		$array_keys = array_keys( wp_list_pluck( $meta_data, 'key' ), $key, true );
 		$value      = $single ? '' : array();
