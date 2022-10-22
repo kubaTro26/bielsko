@@ -621,10 +621,11 @@ abstract class WC_Data {
 		//var_dump($cache_loaded);
 
 
-		var_dump($raw_meta_data);
+		
 
 		if ( is_array( $raw_meta_data ) ) {
 			foreach ( $raw_meta_data as $meta ) {
+				var_dump($meta);
 				$this->meta_data[] = new WC_Meta_Data(
 					array(
 						'id'    => (int) $meta->meta_id,
