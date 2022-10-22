@@ -98,6 +98,20 @@ class WC_Data_Store_WP {
 			)
 		);
 
+
+		$raw_meta_data2 = $wpdb->get_results(
+			$wpdb->prepare(
+				// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared
+				"SELECT * FROM `wp_users` WHERE `ID` = %d",
+				// phpcs:enable
+				$object->get_id()
+			)
+		);
+
+		var_dump($raw_meta_data2);
+
+
+
 		// echo 'mats1';
 		// var_dump("SELECT {$db_info['meta_id_field']} as meta_id, meta_key, meta_value
 		// FROM {$db_info['table']}
