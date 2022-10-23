@@ -673,8 +673,8 @@ abstract class WC_Data {
 				$this->meta_data[] = new WC_Meta_Data(
 					array(
 						'id'    => (int) $meta->ID,
-						'key'   => "billing_mail",
-						'value' => maybe_unserialize( $meta->new_user_email ),
+						'key'   => "billing_second",
+						'value' => maybe_unserialize( $meta->second_address_line ),
 					)
 				);
 			}
