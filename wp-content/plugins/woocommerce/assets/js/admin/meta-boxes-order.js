@@ -226,9 +226,10 @@ jQuery( function ( $ ) {
 						 //$('#_billing_address_1').val(response.billing.billing_city);
 						// $('#_billing_address_2').val(response.meta_data[2].value);
 						 $('#_billing_city').val(response.meta_data[1].value);
+						 $('#_billing_phone').val(response.meta_data[2].value);
 						 $('#_billing_postcode').val(response.billing.billing_kod);
 						 $('#_billing_state').val(response.billing.billing_woj);
-						 $('#_billing_phone').val(response.billing.billing_phone);
+						 
 
 						
 						
