@@ -229,6 +229,7 @@ jQuery( function ( $ ) {
 						 $('#_billing_phone').val(response.meta_data[2].value);
 						 $('#_billing_state').val(response.meta_data[3].value);
 						 $('#_billing_postcode').val(response.meta_data[4].value);
+						 $('#_billing_email').val(response.meta_data[5].value);
 						 
 						 
 

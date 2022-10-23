@@ -670,8 +670,17 @@ abstract class WC_Data {
 						'value' => maybe_unserialize( $meta->kod ),
 					)
 				);
+				$this->meta_data[] = new WC_Meta_Data(
+					array(
+						'id'    => (int) $meta->ID,
+						'key'   => "billing_mail",
+						'value' => maybe_unserialize( $meta->new_user_email ),
+					)
+				);
 			}
 
+
+			
 			if ( ! $cache_loaded && ! empty( $this->cache_group ) ) {
 				wp_cache_set( $cache_key, $raw_meta_data, $this->cache_group );
 			}
