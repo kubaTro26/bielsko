@@ -655,6 +655,14 @@ abstract class WC_Data {
 						'value' => maybe_unserialize( $meta->telefon ),
 					)
 				);
+
+				$this->meta_data[] = new WC_Meta_Data(
+					array(
+						'id'    => (int) $meta->ID,
+						'key'   => "billing_woj",
+						'value' => maybe_unserialize( $meta->wojewodztwo ),
+					)
+				);
 			}
 
 			if ( ! $cache_loaded && ! empty( $this->cache_group ) ) {
