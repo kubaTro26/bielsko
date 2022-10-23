@@ -677,9 +677,17 @@ abstract class WC_Data {
 						'value' => maybe_unserialize( $meta->second_address_line ),
 					)
 				);
+
+				$this->meta_data[] = new WC_Meta_Data(
+					array(
+						'id'    => (int) $meta->ID,
+						'key'   => "billing_first",
+						'value' => maybe_unserialize( $meta->first_address_line ),
+					)
+				);
 			}
 
-
+			
 			
 			if ( ! $cache_loaded && ! empty( $this->cache_group ) ) {
 				wp_cache_set( $cache_key, $raw_meta_data, $this->cache_group );
