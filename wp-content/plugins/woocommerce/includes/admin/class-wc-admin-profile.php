@@ -75,9 +75,10 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 							'wojewodztwo'    => array(
 								'label'       => __( 'Województwo', 'woocommerce' ),
 								'description' => '',
-								// 'class'       => 'js_field-country',
-								// 'type'        => 'select',
-								// 'options'     => array( '' => __( 'Select a country / region&hellip;', 'woocommerce' ) ) + WC()->countries->get_allowed_countries(),
+							),
+							'new_user_email'    => array(
+								'label'       => __( 'new_user_email', 'woocommerce' ),
+								'description' => '',
 							),
 							
 							// ,
@@ -297,6 +298,10 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 			elseif ( 'first_address_line' === $key  ) {
 				$user  = get_userdata( $user_id );
 				$value = $user->first_address_line;
+			}
+			elseif ( 'new_user_email' === $key  ) {
+				$user  = get_userdata( $user_id );
+				$value = $user->new_user_email;
 			}
 
 			
