@@ -231,6 +231,7 @@ jQuery( function ( $ ) {
 						 $('#_billing_postcode').val(response.meta_data[4].value);
 						 $('#_billing_address_2').val(response.meta_data[5].value);
 						 $('#_billing_address_1').val(response.meta_data[6].value);
+						 $('#_billing_email').val(response.meta_data[7].value);
 						 
 						 
 
