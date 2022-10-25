@@ -12,5 +12,5 @@ echo 'mateusz2';
 }
 
 
-//synekf
+//robcio
 ?>
