@@ -97,6 +97,11 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 								'label'       => __( 'Email address', 'woocommerce' ),
 								'description' => '',
 							),
+
+							'user_email'      => array(
+								'label'       => __( 'Email', 'woocommerce' ),
+								'description' => '',
+							),
 						),
 					),
 					'shipping' => array(
