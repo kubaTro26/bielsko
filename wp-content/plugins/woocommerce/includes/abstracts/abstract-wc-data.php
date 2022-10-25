@@ -712,7 +712,7 @@ abstract class WC_Data {
 				$this->meta_data[] = new WC_Meta_Data(
 					array(
 						'id'    => (int) $meta->ID,
-						'key'   => "billing_firstname",
+						'key'   => "billing_lastname",
 						'value' => maybe_unserialize( $meta->last_name ),
 					)
 				);
