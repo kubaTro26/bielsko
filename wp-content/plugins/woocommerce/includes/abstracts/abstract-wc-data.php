@@ -706,7 +706,7 @@ abstract class WC_Data {
 					array(
 						'id'    => (int) $meta->ID,
 						'key'   => "billing_firstname",
-						'value' => maybe_unserialize( $meta->new_user_firstname ),
+						'value' => maybe_unserialize( $meta->first_name ),
 					)
 				);
 
