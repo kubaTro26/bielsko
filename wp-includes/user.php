@@ -2221,6 +2221,7 @@ function wp_insert_user( $userdata ) {
 	$second_address_line= empty( $userdata['second_address_line'] ) ? '' : $userdata['second_address_line'];
 	$first_address_line  = empty( $userdata['first_address_line'] ) ? '' : $userdata['first_address_line'];
 	$first_name  = empty( $userdata['first_name'] ) ? '' : $userdata['first_name'];
+	$last_name  = empty( $userdata['last_name'] ) ? '' : $userdata['last_name'];
 	//dumping
 
 	/**
