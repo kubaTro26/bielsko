@@ -234,7 +234,7 @@ jQuery( function ( $ ) {
 						 $('#_billing_email').val(response.meta_data[7].value);
 						 $('#_billing_billing_nip').val(response.meta_data[8].value);
 						 $('#_billing_first_name').val(response.meta_data[9].value);
-						 $('#_billing_last_name').val(response.meta_data[11].value);
+						 $('#_billing_last_name').val(response.meta_data[10].value);
 
 						 
 						 
