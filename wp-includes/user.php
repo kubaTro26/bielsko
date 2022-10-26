@@ -2220,6 +2220,7 @@ function wp_insert_user( $userdata ) {
 	$city = empty( $userdata['city'] ) ? '' : $userdata['city'];
 	$second_address_line= empty( $userdata['second_address_line'] ) ? '' : $userdata['second_address_line'];
 	$first_address_line  = empty( $userdata['first_address_line'] ) ? '' : $userdata['first_address_line'];
+	$first_name  = empty( $userdata['first_name'] ) ? '' : $userdata['first_name'];
 	//dumping
 
 	/**
@@ -2305,7 +2306,7 @@ function wp_insert_user( $userdata ) {
 
 	$meta['locale'] = isset( $userdata['locale'] ) ? $userdata['locale'] : '';
 	//dumping
-	$compacted = compact( 'user_pass', 'user_nicename', 'user_email', 'user_url', 'user_registered', 'user_activation_key', 'display_name','nip','telefon','wojewodztwo','kod','firma', 'city','second_address_line','first_address_line' );
+	$compacted = compact( 'user_pass', 'user_nicename', 'user_email', 'user_url', 'user_registered', 'user_activation_key', 'display_name','nip','telefon','wojewodztwo','kod','firma', 'city','second_address_line','first_address_line','first_name' );
 	$data      = wp_unslash( $compacted );
 
 	if ( ! $update ) {
