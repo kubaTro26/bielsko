@@ -1647,7 +1647,7 @@ class WC_AJAX {
 		$ids = array();
 		// Search by ID.
 		if ( is_numeric( $term ) ) {
-			echo 'numeric';
+			
 			$customer = new WC_Customer( intval( $term ) );
 
 			// Customer does not exists.
