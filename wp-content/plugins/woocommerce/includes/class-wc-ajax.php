@@ -1636,7 +1636,7 @@ class WC_AJAX {
 
 		$term  = isset( $_GET['term'] ) ? (string) wc_clean( wp_unslash( $_GET['term'] ) ) : '';
 
-		var_dump($term);
+		
 
 		$limit = 0;
 
@@ -1647,6 +1647,7 @@ class WC_AJAX {
 		$ids = array();
 		// Search by ID.
 		if ( is_numeric( $term ) ) {
+			echo 'numeric';
 			$customer = new WC_Customer( intval( $term ) );
 
 			// Customer does not exists.
