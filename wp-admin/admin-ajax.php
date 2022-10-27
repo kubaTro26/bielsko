@@ -188,7 +188,7 @@ if ( is_user_logged_in() ) {
 	 * 
 	 */
 
-	var_dump("wp_ajax_{$action}");
+	//var_dump("wp_ajax_{$action}");
 	 
 
 	do_action( "wp_ajax_{$action}" );

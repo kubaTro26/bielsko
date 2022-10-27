@@ -1635,6 +1635,9 @@ class WC_AJAX {
 		}
 
 		$term  = isset( $_GET['term'] ) ? (string) wc_clean( wp_unslash( $_GET['term'] ) ) : '';
+
+		var_dump($term);
+
 		$limit = 0;
 
 		if ( empty( $term ) ) {
