@@ -1626,6 +1626,8 @@ class WC_AJAX {
 		// file_put_contents($file, $person, FILE_APPEND | LOCK_EX);
 	
 
+		echo 'seraching';
+
 		check_ajax_referer( 'search-customers', 'security' );
 
 		if ( ! current_user_can( 'edit_shop_orders' ) ) {
