@@ -1626,7 +1626,7 @@ class WC_AJAX {
 		// file_put_contents($file, $person, FILE_APPEND | LOCK_EX);
 	
 
-		echo 'seraching';
+		//dumping6
 
 		check_ajax_referer( 'search-customers', 'security' );
 
@@ -1689,7 +1689,7 @@ class WC_AJAX {
 			);
 		}
 
-		wp_send_json( apply_filters( 'woocommerce_json_search_found_customers', $found_customers ) );
+	//	wp_send_json( apply_filters( 'woocommerce_json_search_found_customers', $found_customers ) );
 	}
 
 	/**
