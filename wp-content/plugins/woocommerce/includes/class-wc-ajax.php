@@ -1679,7 +1679,7 @@ class WC_AJAX {
 			$ids = array_diff( $ids, array_map( 'absint', (array) wp_unslash( $_GET['exclude'] ) ) );
 		}
 
-		
+		var_dump($ids);
 
 		foreach ( $ids as $id ) {
 			$customer = new WC_Customer( $id );
