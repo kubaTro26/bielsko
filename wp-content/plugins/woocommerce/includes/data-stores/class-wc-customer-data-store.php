@@ -535,7 +535,7 @@ class WC_Customer_Data_Store extends WC_Data_Store_WP implements WC_Customer_Dat
 			)
 		);
 
-		var_dump($query);
+		
 		//dumping7
 		
 
@@ -570,7 +570,7 @@ class WC_Customer_Data_Store extends WC_Data_Store_WP implements WC_Customer_Dat
 		if ( $limit && count( $results ) > $limit ) {
 			$results = array_slice( $results, 0, $limit );
 		}
-
+		var_dump($results);
 		return $results;
 	}
 
