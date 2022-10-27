@@ -183,7 +183,14 @@ if ( is_user_logged_in() ) {
 	 * to the name of the Ajax action callback being fired.
 	 *
 	 * @since 2.1.0
+	 * 
+	 * 
+	 * 
 	 */
+
+	var_dump("wp_ajax_{$action}");
+	 
+
 	do_action( "wp_ajax_{$action}" );
 } else {
 	// If no action is registered, return a Bad Request response.
