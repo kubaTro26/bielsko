@@ -1689,7 +1689,7 @@ class WC_AJAX {
 			);
 		}
 
-	//	wp_send_json( apply_filters( 'woocommerce_json_search_found_customers', $found_customers ) );
+		wp_send_json( apply_filters( 'woocommerce_json_search_found_customers', $found_customers ) );
 	}
 
 	/**
