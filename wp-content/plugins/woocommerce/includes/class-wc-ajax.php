@@ -1692,7 +1692,8 @@ class WC_AJAX {
 				$customer->get_email()
 			);
 		}
-		var_dump($found_customers);
+		var_dump($customer->get_first_name());
+		
 		wp_send_json( apply_filters( 'woocommerce_json_search_found_customers', $found_customers ) );
 	}
 
