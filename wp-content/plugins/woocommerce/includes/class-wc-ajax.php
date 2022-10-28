@@ -1694,11 +1694,11 @@ class WC_AJAX {
 				}
 			}
 
-			var_dump($billing_firstname);
+			
 			/* translators: 1: user display name 2: user ID 3: user email */
 			$found_customers[ $id ] = sprintf(
 				/* translators: $1: customer name, $2 customer id, $3: customer email */
-				esc_html__( '%1$s  (#%2$s &ndash; %3$s) %4$s', 'woocommerce' ),
+				esc_html__( '%1$s %4$s  (#%2$s &ndash; %3$s) ', 'woocommerce' ),
 				$customer->get_first_name() . ' ' . $customer->get_last_name(),
 				$customer->get_id(),
 				$customer->get_email(),
@@ -1707,7 +1707,7 @@ class WC_AJAX {
 
 			);
 
-			var_dump($found_customers[ $id ]);
+			
 		}
 		
 		
