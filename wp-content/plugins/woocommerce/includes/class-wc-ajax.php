@@ -1687,7 +1687,7 @@ class WC_AJAX {
 			$customer = new WC_Customer( $id );
 
 			foreach($customer->meta_data as $meta){
-				if($meta->current_data['key']=="billing_firstsname"){
+				if($meta->current_data['key']=="billing_firstname"){
 					
 					$billing_firstname = $meta->current_data['value'];
 
