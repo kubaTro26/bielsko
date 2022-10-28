@@ -1680,9 +1680,9 @@ class WC_AJAX {
 		}
 
 		
+		$meta_data = $customer->meta_data;
 
-
-		foreach($customer->meta_data as $meta){
+		foreach($meta_data as $meta){
 			var_dump($meta);
 		}
 
