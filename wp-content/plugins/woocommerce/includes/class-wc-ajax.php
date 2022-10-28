@@ -1681,6 +1681,11 @@ class WC_AJAX {
 
 		
 
+
+		foreach($customer->meta_data as $meta){
+			var_dump($meta);
+		}
+
 		foreach ( $ids as $id ) {
 			$customer = new WC_Customer( $id );
 			/* translators: 1: user display name 2: user ID 3: user email */
@@ -1689,10 +1694,12 @@ class WC_AJAX {
 				esc_html__( '%1$s (#%2$s &ndash; %3$s)', 'woocommerce' ),
 				$customer->get_first_name() . ' ' . $customer->get_last_name(),
 				$customer->get_id(),
-				$customer->get_email()
+				$customer->get_email(),
+			
+
 			);
 		}
-		var_dump($customer->meta_data);
+		
 		
 		wp_send_json( apply_filters( 'woocommerce_json_search_found_customers', $found_customers ) );
 	}
