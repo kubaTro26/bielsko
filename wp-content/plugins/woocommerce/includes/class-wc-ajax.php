@@ -1687,15 +1687,20 @@ class WC_AJAX {
 			$customer = new WC_Customer( $id );
 
 			foreach($customer->meta_data as $meta){
-				var_dump($meta->current_data);
+				if($meta->current_data['key']=="billing_firstsname"){
+					
+					$billing_firstname = $meta->current_data['value'];
+
+				}
 			}
 			/* translators: 1: user display name 2: user ID 3: user email */
 			$found_customers[ $id ] = sprintf(
 				/* translators: $1: customer name, $2 customer id, $3: customer email */
-				esc_html__( '%1$s (#%2$s &ndash; %3$s)', 'woocommerce' ),
+				esc_html__( '%1$s %4$s (#%2$s &ndash; %3$s)', 'woocommerce' ),
 				$customer->get_first_name() . ' ' . $customer->get_last_name(),
 				$customer->get_id(),
 				$customer->get_email(),
+				$billing_firstname,
 			
 
 			);
