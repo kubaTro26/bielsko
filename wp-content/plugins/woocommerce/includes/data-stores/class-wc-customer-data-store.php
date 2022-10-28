@@ -525,7 +525,7 @@ class WC_Customer_Data_Store extends WC_Data_Store_WP implements WC_Customer_Dat
 				'woocommerce_customer_search_customers',
 				array(
 					'search'         => '*' . esc_attr( $term ) . '*',
-					'search_columns' => array( 'user_login', 'user_url', 'user_email', 'user_nicename', 'display_name','city' ),
+					'search_columns' => array( 'user_login', 'user_url', 'user_email', 'user_nicename', 'display_name','city','nip' ),
 					'fields'         => 'ID',
 					'number'         => $limit,
 				),
