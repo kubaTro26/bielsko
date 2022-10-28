@@ -735,7 +735,7 @@ class WP_User_Query {
 			if ( $qv['search_columns'] ) {
 
 				
-				$search_columns = array_intersect( $qv['search_columns'], array( 'ID', 'user_login', 'user_email', 'user_url', 'user_nicename', 'display_name','city' ) );
+				$search_columns = array_intersect( $qv['search_columns'], array( 'ID', 'user_login', 'user_email', 'user_url', 'user_nicename', 'display_name','city','nip' ) );
 			}
 
 		
