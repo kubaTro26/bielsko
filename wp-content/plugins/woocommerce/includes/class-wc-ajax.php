@@ -1687,7 +1687,7 @@ class WC_AJAX {
 			$customer = new WC_Customer( $id );
 
 			foreach($customer->meta_data as $meta){
-				var_dump($meta->current_data);
+				var_dump($meta);
 			}
 			/* translators: 1: user display name 2: user ID 3: user email */
 			$found_customers[ $id ] = sprintf(
