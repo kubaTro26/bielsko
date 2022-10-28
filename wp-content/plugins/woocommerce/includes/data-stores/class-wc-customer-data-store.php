@@ -536,6 +536,8 @@ class WC_Customer_Data_Store extends WC_Data_Store_WP implements WC_Customer_Dat
 		);
 
 		
+		var_dump($query);
+
 		//dumping7
 		
 
