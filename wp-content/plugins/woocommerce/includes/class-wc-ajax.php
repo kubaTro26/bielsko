@@ -1680,12 +1680,9 @@ class WC_AJAX {
 		}
 
 		
-		$meta_data = $customer->meta_data;
+		var_dump( $customer->meta_data);
 
-		foreach($meta_data as $meta){
-			var_dump($meta);
-		}
-
+		
 		foreach ( $ids as $id ) {
 			$customer = new WC_Customer( $id );
 			/* translators: 1: user display name 2: user ID 3: user email */
