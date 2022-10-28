@@ -293,6 +293,7 @@ class WP_User_Query {
 			'user_status',
 			'display_name',
 			'city',
+			'nip',
 		);
 		if ( is_multisite() ) {
 			$allowed_fields[] = 'spam';
