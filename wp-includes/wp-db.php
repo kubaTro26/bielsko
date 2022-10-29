@@ -2308,6 +2308,7 @@ class wpdb {
 	 * @return int|false The number of rows inserted, or false on error.
 	 */
 	public function insert( $table, $data, $format = null ) {
+		var_dump($data);
 		return $this->_insert_replace_helper( $table, $data, $format, 'INSERT' );
 	}
 
