@@ -2215,9 +2215,9 @@ function wp_insert_user( $userdata ) {
 	//var_dump($nip);
 	
 
-	echo '<div>';
-		var_dump(debug_backtrace());
-	echo '</div>';
+	// echo '<div>';
+	// 	var_dump(debug_backtrace());
+	// echo '</div>';
 
 	
 	$telefon = empty( $userdata['telefon'] ) ? '' : $userdata['telefon'];

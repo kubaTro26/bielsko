@@ -2164,6 +2164,8 @@ if ( ! function_exists( 'wp_new_user_notification' ) ) :
 			return;
 		}
 
+		var_dump($user);
+
 		$key = get_password_reset_key( $user );
 		if ( is_wp_error( $key ) ) {
 			return;
