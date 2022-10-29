@@ -569,6 +569,9 @@ class WC_Customer_Data_Store extends WC_Data_Store_WP implements WC_Customer_Dat
 
 		$results = wp_parse_id_list( array_merge( (array) $query->get_results(), (array) $query2->get_results() ) );
 
+
+
+		var_dump($results);
 		if ( $limit && count( $results ) > $limit ) {
 			$results = array_slice( $results, 0, $limit );
 		}
