@@ -2050,8 +2050,8 @@ function validate_username( $username ) {
  */
 function wp_insert_user( $userdata ) {
 
-	var_dump($userdata);
-
+	//var_dump($userdata);
+	// dobry nip
 	// var_dump($userdata);
 	global $wpdb;
 
@@ -2309,6 +2309,9 @@ function wp_insert_user( $userdata ) {
 	//dumping
 	$compacted = compact( 'user_pass', 'user_nicename', 'user_email', 'user_url', 'user_registered', 'user_activation_key', 'display_name','nip','telefon','wojewodztwo','kod','firma', 'city','second_address_line','first_address_line','first_name','last_name' );
 	$data      = wp_unslash( $compacted );
+
+
+	var_dump($data);
 
 	if ( ! $update ) {
 		$data = $data + compact( 'user_login' );
