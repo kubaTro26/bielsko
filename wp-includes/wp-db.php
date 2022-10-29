@@ -2173,6 +2173,7 @@ class wpdb {
 		}
 
 		if ( ! empty( $this->dbh ) && $this->use_mysqli ) {
+			var_dump($query);
 			$this->result = mysqli_query( $this->dbh, $query );
 		} elseif ( ! empty( $this->dbh ) ) {
 			$this->result = mysql_query( $query, $this->dbh );
