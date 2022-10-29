@@ -102,6 +102,10 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 								'label'       => __( 'Email', 'woocommerce' ),
 								'description' => '',
 							),
+							'nip'      => array(
+								'label'       => __( 'nip', 'woocommerce' ),
+								'description' => '',
+							),
 						),
 					),
 					'shipping' => array(
