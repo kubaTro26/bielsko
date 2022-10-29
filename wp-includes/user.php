@@ -2212,7 +2212,7 @@ function wp_insert_user( $userdata ) {
 	$nickname = empty( $userdata['nickname'] ) ? $user_login : $userdata['nickname'];
 	$nip = empty( $userdata['nip'] ) ? '' : $userdata['nip'];
 	
-	//var_dump($nip);
+	var_dump($nip);
 	
 
 	// echo '<div>';
