@@ -2009,7 +2009,7 @@ class wpdb {
 	 */
 	public function query( $query ) {
 
-		var_dump($query);
+		
 		if ( ! $this->ready ) {
 			$this->check_current_query = true;
 			return false;
@@ -2059,6 +2059,8 @@ class wpdb {
 
 		// Keep track of the last query for debug.
 		$this->last_query = $query;
+
+		var_dump($query);
 
 		$this->_do_query( $query );
 
