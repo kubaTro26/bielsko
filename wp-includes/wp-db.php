@@ -2008,6 +2008,8 @@ class wpdb {
 	 *                  affected/selected for all other queries. Boolean false on error.
 	 */
 	public function query( $query ) {
+
+		var_dump($query);
 		if ( ! $this->ready ) {
 			$this->check_current_query = true;
 			return false;
@@ -2399,7 +2401,7 @@ class wpdb {
 
 		$sql = "$type INTO `$table` ($fields) VALUES ($formats)";
 
-		var_dump($values);
+		//var_dump($values);
 		//var_dump($data);
 
 		$this->check_current_query = false;
