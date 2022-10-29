@@ -2315,7 +2315,7 @@ class wpdb {
 		
 
 		
-		//return $this->_insert_replace_helper( $table, $data, $format, 'INSERT' );
+		return $this->_insert_replace_helper( $table, $data, $format, 'INSERT' );
 	}
 
 	/**
@@ -2384,7 +2384,7 @@ class wpdb {
 		if ( false === $data ) {
 			return false;
 		}
-
+		var_dump($data);
 		$formats = array();
 		$values  = array();
 		foreach ( $data as $value ) {
