@@ -81,7 +81,7 @@ function add_woocommerce_admin_billing_fields($billing_fields) {
     return $billing_fields;
 }
 
-add_filter( 'woocommerce_customer_meta_fields', 'filter_add_customer_meta_fields', 10, 1 );
+//add_filter( 'woocommerce_customer_meta_fields', 'filter_add_customer_meta_fields', 10, 1 );
 function filter_add_customer_meta_fields( $fields ) {
     
 
