@@ -2050,7 +2050,7 @@ function validate_username( $username ) {
  */
 function wp_insert_user( $userdata ) {
 
-
+	var_dump($userdata);
 
 	// var_dump($userdata);
 	global $wpdb;
