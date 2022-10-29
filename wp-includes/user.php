@@ -3423,7 +3423,7 @@ function register_new_user( $user_login, $user_email ) {
 	 *
 	 * @param int $user_id ID of the newly registered user.
 	 */
-	do_action( 'register_new_user', $user_id );
+	//do_action( 'register_new_user', $user_id );
 
 	return $user_id;
 }
