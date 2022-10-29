@@ -2060,7 +2060,7 @@ class wpdb {
 		// Keep track of the last query for debug.
 		$this->last_query = $query;
 
-		var_dump($query);
+		//var_dump($query);
 
 		$this->_do_query( $query );
 
