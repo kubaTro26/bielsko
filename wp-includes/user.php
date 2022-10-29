@@ -2365,7 +2365,7 @@ function wp_insert_user( $userdata ) {
 		}
 		$wpdb->update( $wpdb->users, $data, array( 'ID' => $user_id ) );
 	} else {
-		var_dump($data);
+		
 		$wpdb->insert( $wpdb->users, $data );
 		$user_id = (int) $wpdb->insert_id;
 	}
