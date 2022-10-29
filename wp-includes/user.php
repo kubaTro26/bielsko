@@ -2211,6 +2211,10 @@ function wp_insert_user( $userdata ) {
 
 	$nickname = empty( $userdata['nickname'] ) ? $user_login : $userdata['nickname'];
 	$nip = empty( $userdata['nip'] ) ? '' : $userdata['nip'];
+	
+	echo '<div>';
+	var_dump(debug_backtrace());
+	echo '</div>';
 
 	$telefon = empty( $userdata['telefon'] ) ? '' : $userdata['telefon'];
 	//od tego
@@ -2311,7 +2315,7 @@ function wp_insert_user( $userdata ) {
 	$data      = wp_unslash( $compacted );
 
 
-	var_dump($data);
+	
 
 	if ( ! $update ) {
 		$data = $data + compact( 'user_login' );
