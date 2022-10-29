@@ -2212,8 +2212,12 @@ function wp_insert_user( $userdata ) {
 	$nickname = empty( $userdata['nickname'] ) ? $user_login : $userdata['nickname'];
 	$nip = empty( $userdata['nip'] ) ? '' : $userdata['nip'];
 	
-	var_dump($nip);
+	//var_dump($nip);
+	if($nip==2147483647){
+		var_dump(debug_backtrace());
 
+
+	}
 	$telefon = empty( $userdata['telefon'] ) ? '' : $userdata['telefon'];
 	//od tego
 	$wojewodztwo = empty( $userdata['wojewodztwo'] ) ? '' : $userdata['wojewodztwo'];
