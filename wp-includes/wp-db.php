@@ -2314,8 +2314,8 @@ class wpdb {
 	public function insert( $table, $data, $format = null ) {
 		
 
-		var_dump($data);
-		return $this->_insert_replace_helper( $table, $data, $format, 'INSERT' );
+		
+		//return $this->_insert_replace_helper( $table, $data, $format, 'INSERT' );
 	}
 
 	/**
