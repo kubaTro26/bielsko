@@ -2308,7 +2308,7 @@ class wpdb {
 	 * @return int|false The number of rows inserted, or false on error.
 	 */
 	public function insert( $table, $data, $format = null ) {
-		var_dump($data);
+		
 		return $this->_insert_replace_helper( $table, $data, $format, 'INSERT' );
 	}
 
@@ -2394,9 +2394,12 @@ class wpdb {
 		$fields  = '`' . implode( '`, `', array_keys( $data ) ) . '`';
 		$formats = implode( ', ', $formats );
 
+
+		
+
 		$sql = "$type INTO `$table` ($fields) VALUES ($formats)";
 
-
+		var_dump($sql);
 		//var_dump($data);
 
 		$this->check_current_query = false;
