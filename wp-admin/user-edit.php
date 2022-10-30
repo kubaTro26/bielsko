@@ -264,7 +264,7 @@ switch ( $action ) {
 
 				<h2><?php _e( 'Personal Options' ); ?></h2>
 
-				<table class="form-table" role="presentation a6">
+				<table style="display:none;" class="form-table" role="presentation a6">
 					<?php if ( ! ( IS_PROFILE_PAGE && ! $user_can_edit ) ) : ?>
 						<tr class="user-rich-editing-wrap">
 							<th scope="row"><?php _e( 'Visual Editor' ); ?></th>
