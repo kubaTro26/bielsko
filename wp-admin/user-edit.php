@@ -450,17 +450,17 @@ switch ( $action ) {
 						</tr>
 					<?php endif; ?>
 
-					<tr class="user-first-name-wrap">
+					<tr style="display:none;" class="user-first-name-wrap">
 						<th><label for="first_name"><?php _e( 'First Name' ); ?></label></th>
 						<td><input type="text" name="first_name" id="first_name" value="<?php echo esc_attr( $profile_user->first_name ); ?>" class="regular-text b5" /></td>
 					</tr>
 
-					<tr class="user-last-name-wrap">
+					<tr style="display:none;" class="user-last-name-wrap">
 						<th><label for="last_name"><?php _e( 'Last Name' ); ?></label></th>
 						<td><input type="text" name="last_name" id="last_name" value="<?php echo esc_attr( $profile_user->last_name ); ?>" class="regular-text b6" /></td>
 					</tr>
 
-					<tr class="user-nickname-wrap">
+					<tr style="displat:none;" class="user-nickname-wrap">
 						<th><label for="nickname"><?php _e( 'Nickname' ); ?> <span class="description"><?php _e( '(required)' ); ?></span></label></th>
 						<td><input type="text" name="nickname" id="nickname" value="<?php echo esc_attr( $profile_user->nickname ); ?>" class="regular-text b7" /></td>
 					</tr>
