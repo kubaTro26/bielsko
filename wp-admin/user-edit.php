@@ -460,12 +460,12 @@ switch ( $action ) {
 						<td><input type="text" name="last_name" id="last_name" value="<?php echo esc_attr( $profile_user->last_name ); ?>" class="regular-text b6" /></td>
 					</tr>
 
-					<tr style="display:none;" class="user-nickname-wrap">
+					<tr  class="user-nickname-wrap">
 						<th><label for="nickname"><?php _e( 'Nickname' ); ?> <span class="description"><?php _e( '(required)' ); ?></span></label></th>
 						<td><input type="text" name="nickname" id="nickname" value="<?php echo esc_attr( $profile_user->nickname ); ?>" class="regular-text b7" /></td>
 					</tr>
 
-					<tr class="user-display-name-wrap">
+					<tr style="display:none;" class="user-display-name-wrap">
 						<th>
 							<label for="display_name"><?php _e( 'Display name publicly as' ); ?></label>
 						</th>
