@@ -413,7 +413,7 @@ switch ( $action ) {
 					</tr>
 
 					<?php if ( ! IS_PROFILE_PAGE && ! is_network_admin() && current_user_can( 'promote_user', $profile_user->ID ) ) : ?>
-						<tr class="user-role-wrap">
+						<tr class="user-role-wrap p">
 							<th><label for="role"><?php _e( 'Role' ); ?></label></th>
 							<td>
 								<select name="role" id="role">
