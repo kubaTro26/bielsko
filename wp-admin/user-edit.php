@@ -262,10 +262,12 @@ switch ( $action ) {
 					<input type="hidden" name="checkuser_id" value="<?php echo get_current_user_id(); ?>" />
 				</p>
 
-				<h2><?php
+				<!-- <h2> -->
+				<?php
 				
 				//_e( 'Personal Options' );
-				 ?></h2>
+				 ?>
+				 <!-- </h2> -->
 
 				<table style="display:none;" class="form-table" role="presentation a6">
 					<?php if ( ! ( IS_PROFILE_PAGE && ! $user_can_edit ) ) : ?>
