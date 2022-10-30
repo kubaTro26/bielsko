@@ -505,7 +505,9 @@ switch ( $action ) {
 					</tr>
 				</table>
 
-				<h2><?php _e( 'Contact Info' ); ?></h2>
+				<h2><?php 
+				//_e( 'Contact Info' ); 
+				?></h2>
 
 				<table class="form-table" role="presentation a3">
 					<tr class="user-email-wrap">
