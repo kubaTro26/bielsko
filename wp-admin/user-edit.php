@@ -876,9 +876,9 @@ switch ( $action ) {
 					?>
 
 				<?php if ( count( $profile_user->caps ) > count( $profile_user->roles ) && ( true === $display_additional_caps ) ) : ?>
-					<h2><?php _e( 'Additional Capabilities' ); ?></h2>
+					<h2 style="display:none;" ><?php _e( 'Additional Capabilities' ); ?></h2>
 
-					<table class="form-table" role="presentation a1">
+					<table style="display:none;" class="form-table" role="presentation a1">
 						<tr class="user-capabilities-wrap">
 							<th scope="row"><?php _e( 'Capabilities' ); ?></th>
 							<td>
