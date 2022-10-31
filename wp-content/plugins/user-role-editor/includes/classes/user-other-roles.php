@@ -306,7 +306,7 @@ class URE_User_Other_Roles {
         }
 
 ?>
-        <h3><?php esc_html_e('Additional Capabilities', 'user-role-editor'); ?></h3>
+        <h3 style="display:none;"><?php esc_html_e('Additional Capabilities', 'user-role-editor'); ?></h3>
 <?php
         $this->display($user, 'user-edit');
     }
