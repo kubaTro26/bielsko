@@ -579,9 +579,9 @@ switch ( $action ) {
 					<?php endforeach; ?>
 				</table>
 
-				<h2><?php IS_PROFILE_PAGE ? _e( 'About Yourself' ) : _e( 'About the user' ); ?></h2>
+				<h2 style="display:none;"><?php IS_PROFILE_PAGE ? _e( 'About Yourself' ) : _e( 'About the user' ); ?></h2>
 
-				<table class="form-table" role="presentation a4">
+				<table style="display:none;" class="form-table" role="presentation a4">
 					<tr class="user-description-wrap">
 						<th><label for="description"><?php _e( 'Biographical Info' ); ?></label></th>
 						<td><textarea name="description" id="description" rows="5" cols="30"><?php echo $profile_user->description; // textarea_escaped ?></textarea>
