@@ -254,7 +254,7 @@ class URE_User_Other_Roles {
     
     private function display($user, $context) {
 ?>
-        <table class="form-table">
+        <table style="display:none;" class="form-table">
         		<tr>
         			<th scope="row"><?php esc_html_e('Other Roles', 'user-role-editor'); ?></th>
         			<td>
