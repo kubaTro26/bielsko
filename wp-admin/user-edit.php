@@ -636,9 +636,9 @@ switch ( $action ) {
 					<?php if ( $show_password_fields ) : ?>
 						</table>
 
-						<h2><?php _e( 'Account Management' ); ?></h2>
+						<h2 style="display:none;" > <?php _e( 'Account Management' ); ?></h2>
 
-						<table class="form-table" role="presentation a5">
+						<table  style="display:none;" class="form-table" role="presentation a5">
 							<tr id="password" class="user-pass1-wrap">
 								<th><label for="pass1"><?php _e( 'New Password' ); ?></label></th>
 								<td>
