@@ -676,7 +676,7 @@ if ( current_user_can( 'create_users' ) ) {
 			</label>
 		</td>
 	</tr>
-	<tr>
+	<tr style="display:none;">
 		<th scope="row"><?php _e( 'Send User Notification' ); ?></th>
 		<td>
 			<input type="checkbox" name="send_user_notification" id="send_user_notification" value="1" <?php checked( $new_user_send_notification ); ?> />
