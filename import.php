@@ -52,8 +52,8 @@ $content = file_get_contents('wp_users.sql');
 $matches=[];
 
 
-
-preg_match('/*/',$content, $matches );
+//preg_match('/(foo)(bar)(baz)/', 'foobarbaz', $matches, PREG_OFFSET_CAPTURE);
+preg_match('/.*/',$content, &$matches );
 
 
 var_dump($matches);
