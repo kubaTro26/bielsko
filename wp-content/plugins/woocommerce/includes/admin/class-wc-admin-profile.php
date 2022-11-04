@@ -182,7 +182,7 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 			$show_fields = $this->get_customer_meta_fields();
 
 
-			var_dump(__FILE__);
+			var_dump(plugins_url(__FILE__));
 
 // 			add_action( 'wp_enqueue_scripts', 'my_plugin_assets' );
 
