@@ -49,11 +49,14 @@ if ($conn->connect_error) {
 
 $content = file_get_contents('wp_users.sql');
 
+$matches=[];
 
-$json_content = json_encode($content);
 
-var_dump($json_content);
 
+preg_match('/\(.*\)/g',$content, $matches );
+
+
+var_dump($matches);
 
 $sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, 
 `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, 
