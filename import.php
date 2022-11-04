@@ -67,6 +67,10 @@ foreach($matches[0] as $match){
 
 }
 
+foreach ($matched as $ma){
+    var_dump($ma);
+}
+
 var_dump($matched);
 
 $sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, 
