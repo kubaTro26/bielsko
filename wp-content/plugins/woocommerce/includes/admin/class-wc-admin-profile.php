@@ -183,7 +183,7 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 
 
 
-			add_action( 'edit_user_profile', 'my_plugin_assets2' );
+			add_action( 'admin_init', 'my_plugin_assets2' );
 			function my_plugin_assets2() {
 				
 			
