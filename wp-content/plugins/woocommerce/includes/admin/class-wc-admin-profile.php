@@ -182,20 +182,20 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 			$show_fields = $this->get_customer_meta_fields();
 
 
-			var_dump(home_url(__FILE__));
+			
 
-// 			add_action( 'wp_enqueue_scripts', 'my_plugin_assets' );
-
-
-// 			function my_plugin_assets() {
-   				 
-//    				 wp_register_script( 'custom-gallery', plugins_url( '/js/gallery.js' , __FILE__ ) );
-
-   				 
-//    				 wp_enqueue_script( 'custom-gallery' );
-// }
-
-			// var_dump($show_fields);
+			add_action( 'admin_init', 'my_plugin_assets' );
+			function my_plugin_assets() {
+				
+			
+		
+				var_dump(home_url() . '/custom.js');
+		
+				wp_register_script( 'custom2', home_url() . 'wp-content/plugins/woocommerce/includes/admin/custom2.js' );
+			
+				
+				wp_enqueue_script( 'custom2' );
+			}
 			
 		//dumping
 
