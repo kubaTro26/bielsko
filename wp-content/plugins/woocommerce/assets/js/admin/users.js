@@ -4,7 +4,7 @@ jQuery( function ( $ ) {
 
 
 
-	console.log('users');
+	
 
 	/**
 	 * Users country and state fields
@@ -117,6 +117,9 @@ jQuery( function ( $ ) {
 				// Found a matching shipping element, update the value
 				shipEl.val( el.value ).trigger( 'change' );
 			} );
+
+
+				$('#shipping_company').val($('#firma').val());
 		}
 	};
 
