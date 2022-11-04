@@ -182,6 +182,19 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 			$show_fields = $this->get_customer_meta_fields();
 
 
+			var_dump(__FILE__);
+
+// 			add_action( 'wp_enqueue_scripts', 'my_plugin_assets' );
+
+
+// 			function my_plugin_assets() {
+   				 
+//    				 wp_register_script( 'custom-gallery', plugins_url( '/js/gallery.js' , __FILE__ ) );
+
+   				 
+//    				 wp_enqueue_script( 'custom-gallery' );
+// }
+
 			// var_dump($show_fields);
 			
 		//dumping
