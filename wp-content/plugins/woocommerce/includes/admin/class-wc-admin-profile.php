@@ -184,12 +184,12 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 
 			
 
-			add_action( 'admin_init', 'my_plugin_assets' );
-			function my_plugin_assets() {
+			add_action( 'admin_init', 'my_plugin_assets2' );
+			function my_plugin_assets2() {
 				
 			
 		
-				var_dump(home_url() . '/custom.js');
+				
 		
 				wp_register_script( 'custom2', home_url() . 'wp-content/plugins/woocommerce/includes/admin/custom2.js' );
 			
