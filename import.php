@@ -64,11 +64,11 @@ $sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`
  `city`, `kod`, `wojewodztwo`, `telefon`) VALUES ('998', 'test', '', 'test', 'testowy@gmail.com', 'test.com',
   '0000-00-00 00:00:00.000000', '', '0', 'test', '99999', 'test', 'testowy', '', '', '', '', '', '', '');";
 
-if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
+// if ($conn->query($sql) === TRUE) {
+//   echo "New record created successfully";
+// } else {
+//   echo "Error: " . $sql . "<br>" . $conn->error;
+// }
 
 $conn->close();
 ?>
