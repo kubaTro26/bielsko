@@ -58,12 +58,12 @@ $matches;
 //preg_match('/(foo)(bar)(baz)/', 'foobarbaz', $matches, PREG_OFFSET_CAPTURE);
 preg_match_all('/\(.*\)/',$content, $matches, PREG_OFFSET_CAPTURE );
 
+var_dump($matches);
+// foreach($matches as $match){
 
-foreach($matches as $match){
+//     var_dump($match);
 
-    var_dump($match);
-
-}
+// }
 
 $sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, 
 `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, 
