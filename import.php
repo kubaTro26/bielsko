@@ -68,8 +68,9 @@ foreach($matches[0] as $match){
 }
 
 foreach ($matched as $ma){
+    var_dump($ma)
     foreach($ma as $m){
-        var_dump($m);
+        ;
 
     }
 }
