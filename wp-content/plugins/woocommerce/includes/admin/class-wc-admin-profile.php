@@ -181,10 +181,7 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 
 			$show_fields = $this->get_customer_meta_fields();
 
-			add_action ( 'all', function(){
-				print_r ( $GLOBALS['wp_actions'] );         
-			} );
-
+			var_dump( $GLOBALS['wp_actions']);
 			// add_action( 'admin_init', 'my_plugin_assets2' );
 			// function my_plugin_assets2() {
 				
