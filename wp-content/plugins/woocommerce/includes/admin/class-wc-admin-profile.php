@@ -193,7 +193,7 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 				
 				?>
 				<h2><?php echo $fieldset['title']; ?></h2>
-				<table class="form-table e" id="<?php echo esc_attr( 'fieldset-' . $fieldset_key ); ?>">
+				<table class="form-table ef" id="<?php echo esc_attr( 'fieldset-' . $fieldset_key ); ?>">
 					<?php foreach ( $fieldset['fields'] as $key => $field ) : ?>
 						<tr>
 							<th>
