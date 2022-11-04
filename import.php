@@ -70,7 +70,9 @@ foreach($matches[0] as $match){
 foreach ($matched as $ma){
     
      for($i=0; $i < count($ma); $i++){
-       var_dump($ma[$i]);
+        foreach($ma[$i] as $m){
+            var_dump($m);
+        }
      }
 }
 
