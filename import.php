@@ -50,7 +50,7 @@ if ($conn->connect_error) {
 $content = file_get_contents('wp_users.sql');
 
 
-var_dump($content);
+//var_dump($content);
 
 $matches;
 
