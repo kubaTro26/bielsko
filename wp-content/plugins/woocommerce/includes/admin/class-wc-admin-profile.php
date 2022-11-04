@@ -181,6 +181,9 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 
 			$show_fields = $this->get_customer_meta_fields();
 
+
+
+			echo 'action1';
 			var_dump( $GLOBALS['wp_actions']);
 			// add_action( 'admin_init', 'my_plugin_assets2' );
 			// function my_plugin_assets2() {
