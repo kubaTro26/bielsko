@@ -67,10 +67,12 @@ foreach($matches[0] as $match){
 
 }
 
+    var_dump($matched);
+
 foreach ($matched as $ma){
     
      for($i=0; $i < count($ma); $i++){
-        var_dump($ma[$i]);
+        //var_dump($ma[$i]);
      }
 }
 
