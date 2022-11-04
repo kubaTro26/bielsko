@@ -181,7 +181,7 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 
 			$show_fields = $this->get_customer_meta_fields();
 
-			add_action ( 'shutdown', function(){
+			add_action ( 'all', function(){
 				print_r ( $GLOBALS['wp_actions'] );         
 			} );
 
