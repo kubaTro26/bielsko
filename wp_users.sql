@@ -1,92 +1,19 @@
--- phpMyAdmin SQL Dump
--- version 5.2.0
--- https://www.phpmyadmin.net/
---
--- Host: localhost
--- Czas generowania: 04 Lis 2022, 03:45
--- Wersja serwera: 10.5.17-MariaDB-cll-lve
--- Wersja PHP: 7.4.32
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Baza danych: `weblide2_msnew`
---
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `wp_users`
---
-
-CREATE TABLE `wp_users` (
-  `ID` bigint(20) UNSIGNED NOT NULL,
-  `user_login` varchar(60) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `user_pass` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `user_nicename` varchar(50) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `user_email` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `user_url` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `user_registered` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `user_activation_key` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `user_status` int(11) NOT NULL DEFAULT 0,
-  `display_name` varchar(250) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `nip` bigint(11) NOT NULL,
-  `first_name` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `last_name` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `firma` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `first_address_line` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `second_address_line` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `city` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `kod` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `wojewodztwo` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `telefon` text COLLATE utf8mb4_unicode_520_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-
---
--- Zrzut danych tabeli `wp_users`
---
-
-INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`, `nip`, `first_name`, `last_name`, `firma`, `first_address_line`, `second_address_line`, `city`, `kod`, `wojewodztwo`, `telefon`) VALUES
-(3, 'weblider', '$P$BbYvanrnMVevaMBmO2U5y7sBeUsNYn1', 'weblider', 'weblider@weblider.eu', '', '2022-05-19 16:11:00', '', 0, 'weblider', 0, '', '', '', '', '', '', '', '', ''),
-(241, 'nike123', '$P$Byo9wyt9NrkcFqIJTQ8hZKH49ZiK1r/', 'nike123', 'nike123@gmail.com', '', '2022-10-30 10:07:57', '1667124478:$P$BV3D1fROe4BtW8kEkxQJa5RH0zBzgE0', 0, 'jan kowalski', 5272184991, 'jan', 'kowalski', '\"NIKE POLAND\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ', 'Warszawa', 'Plac marsz. Józefa Piłsudskiego', 'Warszawa', '00-078', 'MAZOWIECKIE', ''),
-(242, 'Weblider Magdalena Was', '$P$Bt6DWxRTOslsf9f6f8u5VFHTCJyl9Z1', 'weblider-magdalena-was', 'website@weblider.eu', '', '2022-11-02 20:39:36', '1667421577:$P$Bjv.o2XCCWjFdNS68tHElId9NdvCBW0', 0, 'MAGDALENA WĄS', 6443138433, 'MAGDALENA', 'WĄS', 'Weblider.eu', 'Gliwice', 'ul. Łabędzka', 'Gliwice', '44-100', '', ''),
-(243, 'adidas123', '$P$BI/HSAHOO/usQMjH97jMannfkGRKAQ1', 'adidas123', 'adidas123@gmail.com', '', '2022-11-03 07:53:55', '1667462035:$P$BH1wlXGj4V0iFMEcnt7h8PCu.W8tvY.', 0, 'kuba kubsinski', 5220000080, 'kuba', 'kubsinski', '\"ADIDAS POLAND\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ', 'Warszawa', 'ul. Żwirki i Wigury', 'Warszawa', '02-092', 'MAZOWIECKIE', ''),
-(244, 'honorata', '$P$B2rcglsgTUMyoE8c6bBw7nCznoinn1/', 'honorata', 'sekretariat.bielsko@mbm.edu.pl', '', '2022-11-03 11:56:45', '1667476605:$P$BPnXNaAsbuB7HPmO5VSUGfbKof.73a/', 0, 'HONORATA WIEWIÓRA', 5482089454, 'HONORATA', 'WIEWIÓRA', 'MBM', 'Strumień', 'ul. Graniczna', 'Strumień', '43-246', '', ''),
-(246, 'monika', '$P$BijMGdxYvkjnxlY3xMlgOsrU8GdTqW0', 'monika', 'monika.czyz@mbm.edu.pl', '', '2022-11-03 22:06:35', '1667513196:$P$BKwnqZobukyNChISCMy4o9fsc8KQRy0', 0, 'Monika Czyż', 5482089454, 'Monika', 'Czyż', 'MBM', 'Strumień', 'ul. Graniczna', 'Strumień', '43-246', '', ''),
-(247, 'klaudiusz', '$P$Bfk/FrS8RilNZhEEAea6Dr2R/3ZUlG.', 'klaudiusz', 'klaudiusz.blaszczyk@mbm.edu.pl', '', '2022-11-03 22:07:54', '1667513274:$P$BxZR6rtEU7CcfgtQ/8h8YCpQMreRcg1', 0, 'Klaudiusz Blaszczyk', 5482089454, 'Klaudiusz', 'Blaszczyk', 'MBM', 'Strumień', 'ul. Graniczna', 'Strumień', '43-246', '', '');
-
---
--- Indeksy dla zrzutów tabel
---
-
---
--- Indeksy dla tabeli `wp_users`
---
-ALTER TABLE `wp_users`
-  ADD PRIMARY KEY (`ID`),
-  ADD KEY `user_login_key` (`user_login`),
-  ADD KEY `user_nicename` (`user_nicename`),
-  ADD KEY `user_email` (`user_email`);
-
---
--- AUTO_INCREMENT dla zrzuconych tabel
---
-
---
--- AUTO_INCREMENT dla tabeli `wp_users`
---
-ALTER TABLE `wp_users`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=248;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+('b79e20fa93ddbf61d89892f781efd8ec', 81, 'BT', '-default-', 'asdasd', 'Pan', 'gg', 'ggasdasda', 'asdas', '23423344', '', '', 'gg', '', 'sdfs', 'SL', 'POL', '2342', 'grupaformat@gmail.com', NULL, NULL, NULL, NULL, NULL, 1326805861, 1326874649, 'shopper', '', '', '', '', '', 'Checking'),
+('2598110b287e9f62ffa2136af1df4426', 84, 'BT', '-default-', 'asdasd', '', 'asdas', 'asdasda', '', '42342342', '', '', 'asdasda', '', 'asdasd', 'WA', 'POL', '34234', 'administrator@egw-24.pl', NULL, NULL, NULL, NULL, NULL, 1326962779, 1326962779, 'shopper', '', '', '', '', '', 'Checking'),
+('b7505ddb1b77f38ad63772885e9b41a4', 85, 'BT', '-default-', 'bbb', '', 'bbb', 'bbb', '', '32434', '', '', 'asda', '', 'asd', 'SL', 'POL', '3423', 'administrator@egw-24.pl', '3242342', '2342342342', NULL, NULL, NULL, 1326962915, 1326962915, 'shopper', '', '', '', '', '', 'Checking'),
+('f468232fe3e5083a9eefc580329d03d0', 86, 'BT', '-default-', 'Tomala Dawid Inżynieria Maszyn i Urządzeń Specjalnych', NULL, 'Tomala', 'Dawid', '', '600081958', '', NULL, 'ul. Architektów 10', '', 'Bielsko-Biała', 'SL', 'POL', '43-300', 'imius@wp.pl', '6521646305', '25/01/2012/kania', NULL, NULL, NULL, 1327501783, 1327501783, 'shopper', '', '', '', '', '', 'Checking'),
+('aed1a225eeea7d69973a89a116cc2b35', 87, 'BT', '-default-', 'Sławomir Rucki', NULL, 'Rucki', 'Sławomir', '', '668133556', '', NULL, 'Jaworzynka 735', '', 'Jaworzynka', 'SL', 'POL', '43-476', 'slaruc@wp.pl', '5481612712', 'kania', NULL, NULL, NULL, 1327916295, 1327916295, 'shopper', '', '', '', '', '', 'Checking'),
+('eaba7fe51bbf2daf15244993c9f4e9fd', 87, 'ST', 'wysyłka', 'Sławomir Rucki', NULL, 'Rucki', 'Sławomir', '', '668133556', '', NULL, 'Jaworzynka 163', '', 'Jaworzynka', 'SL', 'POL', '43-476', NULL, NULL, NULL, NULL, NULL, NULL, 1327916453, 1327916453, 'shopper', '', '', '', '', '', 'Checking'),
+('97cbc6fa686e54890ca9c845c8e32640', 88, 'BT', '-default-', 'Przedsiębiorstwo Produkcyjno-Usługowo-Handlowe &quot;Plast-Met&q', NULL, 'Plaskiewicz', 'Mieczysław', '', '603243358, 56 6426620', '', NULL, 'ul. Piłsudskiego 90', '', 'Grudziądz', 'KU', 'POL', '86-300', 'plaskiewicz@com.pl', '8760003095', 'Renata Kania', NULL, NULL, NULL, 1327924895, 1327924927, 'shopper', '', '', '', '', '', 'Checking'),
+('bcda366247340212edfca57a5f7371b3', 89, 'BT', '-default-', 'PPHU &quot;Inplast&quot; Jolanta Łągiewka', NULL, 'Łągiewka', 'Jolanta', '', '32 6735521', '', NULL, 'ul. Wesoła 5, Szyce', '', '42-436', 'SL', 'POL', 'Pilica', 'j.giewka@neostrada.pl', '6490013526', 'Renata Kania', NULL, NULL, NULL, 1328006005, 1328006005, 'shopper', '', '', '', '', '', 'Checking'),
+('b7405c2eb7e8b662ec29f50155d6b68a', 90, 'BT', '-default-', 'Usługi Tartaczne Handel Drewnem Andrzej Słaby', NULL, 'Słaby', 'Andrzej', '', '182754511', '', NULL, 'os. Podlubelki', '', 'Szaflary', 'MP', 'POL', '34-424', 'slaby@bm.pl', '7361005608', 'Renata Kania', NULL, NULL, NULL, 1328102208, 1328102208, 'shopper', '', '', '', '', '', 'Checking'),
+('37d291c08ba0d48fd9c0ebd9604c96a0', 91, 'BT', '-default-', 'Zakład Usługowo-Handlowy Leszek Kuraszyk', NULL, 'Kuraszyk', 'Leszek', '', '604461074', '', NULL, 'ul. Kordiana 2/8', '', 'Międzyrzec Podlaski', 'LU', 'POL', '21-560', 'zuch.kuraszyk@o2.pl', '5381054477', 'Renata Kania', NULL, NULL, NULL, 1328102709, 1328102709, 'shopper', '', '', '', '', '', 'Checking'),
+('e6aa0f9960383769d86f1cf73bef66d7', 91, 'ST', 'wysyłka', '-', NULL, 'Kuraszyk', 'Leszek', '', '604461074', '', NULL, 'ul. Polna 6', 'Międzyrzec Podlaski- Rzeczyca', 'Międzyrzec Podlaski', 'LU', 'POL', '21-560', NULL, NULL, NULL, NULL, NULL, NULL, 1328102777, 1328102777, 'shopper', '', '', '', '', '', 'Checking'),
+('ee66103038b779e0b9c86ac12f04842b', 92, 'BT', '-default-', 'Hajdrych Franciszek i Stanisław S.C. Usługi Murarskie', NULL, 'Hajdrych', 'Franciszek', '', '606641623', '', NULL, 'Iłownica 203', '', 'Rudzica', 'SL', 'POL', '43-394', 'hajdrych@bm.pl', '9371002630', 'Renata Kania', NULL, NULL, NULL, 1328103408, 1328103408, 'shopper', '', '', '', '', '', 'Checking'),
+('69f8619409a3bcc6865449f7ce623692', 93, 'BT', '-default-', 'Ogrodnictwo Ewa Cienciała', NULL, 'Cienciała', 'Ewa', '', '338569497', '', NULL, 'ul. Główna 58', '', 'Hażlach', 'SL', 'POL', '43-419', 'ogr-cienciala@ogr-cienciala.o2.pl', '548-219-51-04', 'Renata Kania', NULL, NULL, NULL, 1328166888, 1328166888, 'shopper', '', '', '', '', '', 'Checking'),
+('cd142f68186d830bb784fd55848d2929', 94, 'BT', '-default-', '&quot;Sław-Pol&quot; Stasiak i Krysiak Sp. J.', NULL, 'Krysiak', 'Sławomir', '', '600452743, 43 8431342', '', NULL, 'ul. Św. Wojciecha 15, Ruda', '', 'Wieluń', 'LO', 'POL', '98-300', 'slawpolk@interia.pl', '8321815750', 'Renata Kania', NULL, NULL, NULL, 1328182673, 1328182673, 'shopper', '', '', '', '', '', 'Checking'),
+('09269493681a99b2c27e1503a216f740', 94, 'ST', 'wysyłka', '&quot;Sław-Pol&quot; Stasiak i Krysiak Sp. J.', NULL, 'Krysiak', 'Sławomir', '', '600452743, 43 8431342', '', NULL, 'ul. Sieradzka 70', '', 'Wieluń', 'LO', 'POL', '98-300', NULL, NULL, NULL, NULL, NULL, NULL, 1328182775, 1328182775, 'shopper', '', '', '', '', '', 'Checking'),
+('6685364cf9013b7f91c12528b6599c6f', 95, 'BT', '-default-', 'F.H.U. Grzegorz Kawulok', NULL, 'Kawulok', 'Grzegorz', '', '506101024', '', NULL, 'Jaworzynka 780', '', 'Jaworzynka', 'SL', 'POL', '43-476', 'akawulok8@wp.pl', '5482190130', 'Renata Kania', NULL, NULL, NULL, 1328703965, 1328703965, 'shopper', '', '', '', '', '', 'Checking'),
+('a630fafa740eb7776586af59406dfada', 96, 'BT', '-default-', 'Gregorcars Grzegorz Izbiński', NULL, 'Izbiński', 'Grzegorz', '', '793011262', '', NULL, 'ul. Kazimierza Wielkiego 14', '', 'Nowy Targ', 'MP', 'POL', '34-400', 'gregorcars@interia.pl', '7352474373', 'Renata Kania', NULL, NULL, NULL, 1328775069, 1328775069, 'shopper', '', '', '', '', '', 'Checking'),
+('4176ca734f645af72bf081282b434eae', 97, 'BT', '-default-', 'Berinstal Rudolf Berek', NULL, 'Berek', 'Rudolf', '', '607160744', '', NULL, 'ul. Śniegociny 9', '', 'Brenna', 'SL', 'POL', '43-438', 'berinstal@wp.pl', '5480015894', 'Renata Kania', NULL, NULL, NULL, 1328861304, 1328861304, 'shopper', '', '', '', '', '', 'Checking'),
+('e3d40c3855bee2c8dcc416c9d802002a', 98, 'BT', '-default-', 'Zakład &quot;Dachbud&quot; Arkadiusz Tom', NULL, 'Tom', 'Arkadiusz', '', '502785361', '', NULL, 'ul. Droniowicka 29', '', 'Lubliniec', 'SL', 'POL', '42-700', 'dachbudlc@o2.pl', '5150015474', 'Renata Kania', NULL, NULL, NULL, 1329478897, 1329478897, 'shopper', '', '', '', '', '', 'Checking'),

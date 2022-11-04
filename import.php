@@ -4,6 +4,40 @@ $username = "weblide2_mbmzam";
 $password = "-]y-IMbc24YNHac7";
 $dbname = "weblide2_msnew";
 
+
+
+class wpis {
+
+    public $id;
+    public $user_login;
+    public $user_pass;
+    public $user_nicename;
+    public $user_email;
+    public $user_url;
+    public $user_registered;
+    public $user_activation_key;
+    public $user_status;
+    public $display_name;
+    public $nip;
+    public $first_name;
+    public $last_name;
+    public $firma;
+    public $first_address_line;
+    public $second_address_line;
+    public $city;
+    public $kod;
+    public $wojewodztwo;
+    public $telefon;
+
+
+
+}
+
+
+
+
+
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -11,12 +45,18 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`,
- `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`,
-  `display_name`, `nip`, `first_name`, `last_name`, `firma`, `first_address_line`,
-   `second_address_line`, `city`, `kod`, `wojewodztwo`, `telefon`) VALUES
-    ('998', 'kuba', 'kuba1245', 'kubalka', 'kubalka@gmail.com', 'kubalka.com',
-     '0000-00-00 00:00:00.000000', '', '0', '', '', '', '', '', '', '', '', '', '', '');";
+
+
+$content = file_get_contents('wp_users.sql');
+
+var_dump($content);
+
+
+$sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, 
+`user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, 
+`display_name`, `nip`, `first_name`, `last_name`, `firma`, `first_address_line`, `second_address_line`,
+ `city`, `kod`, `wojewodztwo`, `telefon`) VALUES ('998', 'test', '', 'test', 'testowy@gmail.com', 'test.com',
+  '0000-00-00 00:00:00.000000', '', '0', 'test', '99999', 'test', 'testowy', '', '', '', '', '', '', '');";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
