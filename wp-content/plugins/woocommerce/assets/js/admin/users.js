@@ -120,6 +120,18 @@ jQuery( function ( $ ) {
 
 
 				$('#shipping_company').val($('#firma').val());
+
+				$('#shipping_address_1').val($('#first_address_line').val());
+
+				$('#shipping_address_2').val($('#second_address_line').val());
+
+				$('#shipping_city').val($('#city').val());
+
+				$('#shipping_postcode').val($('#kod').val());
+
+				$('#shipping_state').val($('#wojewodztwo').val());
+
+				$('#shipping_phone').val($('#telefon').val());
 		}
 	};
 
