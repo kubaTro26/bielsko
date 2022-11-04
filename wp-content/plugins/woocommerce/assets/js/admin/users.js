@@ -1,6 +1,11 @@
 /*global wc_users_params */
 jQuery( function ( $ ) {
 
+
+
+
+	console.log('users');
+
 	/**
 	 * Users country and state fields
 	 */
