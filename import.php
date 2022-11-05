@@ -97,7 +97,7 @@ foreach ($matched as $ma){
 
         $string = $ma[$i];
 
-        $warunek = str_contains($string , '\'');
+        $warunek = strpos($string , '\'');
 
         var_dump($warunek);
 
