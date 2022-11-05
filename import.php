@@ -98,6 +98,7 @@ foreach ($matched as $ma){
         $first = [];
 
         $second = [];
+
      for($i=0; $i < count($ma); $i++){
       //str_contains($ma[$i] , '\'')
 
@@ -112,17 +113,17 @@ foreach ($matched as $ma){
         if($warunek){
 
 
-          preg_match_all('/\'.*\'/',$ma[$i], $mas );
+          preg_match_all('/\'.*\'/',$string, $st );
 
 
         }
         elseif($warunek == false){
 
-          preg_match_all('/[0-9][0-9].*/',$mas, $mak );
+          preg_match_all('/[0-9][0-9].*/',$string, $st );
 
         }
 
-        $first[]=$mak;
+        $first[]=$st;
 
         if($i==32){
 
