@@ -93,6 +93,11 @@ var_dump($matched);
 
 foreach ($matched as $ma){
     
+
+
+        $first = [];
+
+        $second = [];
      for($i=0; $i < count($ma); $i++){
       //str_contains($ma[$i] , '\'')
 
@@ -117,6 +122,12 @@ foreach ($matched as $ma){
 
         }
 
+        $first[]=$ma[$i];
+
+        if($i==32){
+
+          $second[]=$first;
+        }
         
 
        // var_dump($ma[$i]);
@@ -124,6 +135,8 @@ foreach ($matched as $ma){
      }
 }
 
+
+var_dump($second);
 
 
 $sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, 
