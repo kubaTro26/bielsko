@@ -75,8 +75,8 @@ foreach($matches[0] as $match){
 foreach ($matched as $ma){
     
      for($i=0; $i < count($ma); $i++){
-        
-        if(str_contains($ma[$i] , '\'')){
+      //str_contains($ma[$i] , '\'')
+        if(true){
 
 
           preg_match_all('/\'.*\'/',$ma[$i], $ma[$i] );
