@@ -97,6 +97,8 @@ foreach ($matched as $ma){
 
         $string = $ma[$i];
 
+      var_dump($string);
+
         $warunek = strpos($string , '\'');
 
         
@@ -114,7 +116,7 @@ foreach ($matched as $ma){
 
         
 
-        var_dump($ma[$i]);
+        //var_dump($ma[$i]);
 
      }
 }
