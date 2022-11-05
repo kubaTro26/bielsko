@@ -76,10 +76,15 @@ foreach ($matched as $ma){
     
      for($i=0; $i < count($ma); $i++){
       //str_contains($ma[$i] , '\'')
+
+        $warunek = str_contains($ma[$i] , '\'');
+
+        var_dump($warunek);
+
         if(true){
 
 
-          preg_match_all('/\'.*\'/',$ma[$i], $ma[$i] );
+          //preg_match_all('/\'.*\'/',$ma[$i], $ma[$i] );
 
 
         }
@@ -89,7 +94,7 @@ foreach ($matched as $ma){
 
         
 
-        var_dump($ma[$i]);
+       // var_dump($ma[$i]);
 
      }
 }
