@@ -112,17 +112,17 @@ foreach ($matched as $ma){
         if($warunek){
 
 
-          preg_match_all('/\'.*\'/',$ma[$i], $ma[$i] );
+          preg_match_all('/\'.*\'/',$ma[$i], $mas );
 
 
         }
         elseif($warunek == false){
 
-          preg_match_all('/[0-9][0-9].*/',$ma[$i], $ma[$i] );
+          preg_match_all('/[0-9][0-9].*/',$mas, $mak );
 
         }
 
-        $first[]=$ma[$i];
+        $first[]=$mak;
 
         if($i==32){
 
