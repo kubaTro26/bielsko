@@ -58,7 +58,7 @@ $matches;
 //preg_match('/(foo)(bar)(baz)/', 'foobarbaz', $matches, PREG_OFFSET_CAPTURE);
 preg_match_all('/\(.*\)/',$content, $matches );
 
-var_dump($matches);
+//var_dump($matches);
 
 
 
@@ -69,7 +69,7 @@ foreach($matches[0] as $match){
 
 }
 
-    
+    var_dump($matched);
 
 foreach ($matched as $ma){
     
