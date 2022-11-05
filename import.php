@@ -65,11 +65,11 @@ preg_match_all('/\(.*\)/',$content, $matches );
 foreach($matches[0] as $match){
 
 
-    var_dump($match);
-   $matched[]= explode(',', $match[0]);
+   
+   $matched[]= explode(',', $match);
 
 }
-
+var_dump($matched);
     
 
 foreach ($matched as $ma){
