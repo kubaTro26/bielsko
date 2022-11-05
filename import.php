@@ -125,7 +125,9 @@ foreach ($matched as $ma){
 
         $first[]=$st;
 
+
         if($i==32){
+          var_dump($first);
 
           $second[]=$first;
         }
@@ -137,7 +139,7 @@ foreach ($matched as $ma){
 }
 
 
-var_dump($second);
+
 
 
 $sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, 
