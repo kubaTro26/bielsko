@@ -76,7 +76,14 @@ foreach ($matched as $ma){
     
      for($i=0; $i < count($ma); $i++){
         
-        preg_match_all('/\'.*\'/',$ma[$i], $ma[$i] );
+        if(str_contains($ma[$i],'\'')){
+          preg_match_all('/\'.*\'/',$ma[$i], $ma[$i] );
+        }
+        else{
+          preg_match_all('/\[0-9\]/',$ma[$i], $ma[$i] );
+        }
+
+        
 
         var_dump($ma[$i]);
 
