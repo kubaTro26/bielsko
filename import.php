@@ -75,7 +75,11 @@ foreach($matches[0] as $match){
 foreach ($matched as $ma){
     
      for($i=0; $i < count($ma); $i++){
+        
+        preg_match_all('/\'.*\'/',$ma[$i], $ma[$i] );
+
         var_dump($ma[$i]);
+
      }
 }
 
