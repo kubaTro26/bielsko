@@ -77,9 +77,11 @@ foreach ($matched as $ma){
      for($i=0; $i < count($ma); $i++){
       //str_contains($ma[$i] , '\'')
 
-       // $warunek = str_contains($ma[$i] , '\'');
+        $string = $ma[$i];
 
-        //var_dump($warunek);
+        $warunek = str_contains($string , '\'');
+
+        var_dump($warunek);
 
         if(true){
 
@@ -94,7 +96,7 @@ foreach ($matched as $ma){
 
         
 
-        var_dump($ma[$i]);
+        //var_dump($ma[$i]);
 
      }
 }
