@@ -101,22 +101,24 @@ foreach ($matched as $ma){
 
         $warunek = strpos($string , '\'');
 
-        var_dump($warunek);
+        
 
-        if($warunek ){
+        if($warunek){
 
 
           preg_match_all('/\'.*\'/',$ma[$i], $ma[$i] );
 
 
         }
-        else{
-          preg_match_all('/\[0\-9\]/',$ma[$i], $ma[$i] );
+        elseif($warunek == false){
+
+          preg_match_all('/[0-9]/',$ma[$i], $ma[$i] );
+
         }
 
         
 
-        //var_dump($ma[$i]);
+        var_dump($ma[$i]);
 
      }
 }
