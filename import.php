@@ -88,7 +88,7 @@ foreach($matches[0] as $match){
 
 }
 
-    
+$second = [];
 
 
 foreach ($matched as $ma){
@@ -97,7 +97,7 @@ foreach ($matched as $ma){
 
         $first = [];
 
-        $second = [];
+        
 
      for($i=0; $i < count($ma); $i++){
       //str_contains($ma[$i] , '\'')
