@@ -112,7 +112,7 @@ foreach ($matched as $ma){
         }
         elseif($warunek == false){
 
-          preg_match_all('/[0-9]/',$ma[$i], $ma[$i] );
+          preg_match_all('/[0-9][0-9].*/',$ma[$i], $ma[$i] );
 
         }
 
