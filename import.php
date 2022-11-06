@@ -142,25 +142,10 @@ foreach ($matched as $ma){
   foreach($second as $sec){
 
 
-    
-    
+
+      var_dump($sec);
   
-    for($k=0;$k<count($sec); $k++){
-      $a=$sec[$k];
-      var_dump(count($sec));
-
-      if(count($a[0])>0){
-
-        //var_dump($a[0][0]);
-
-
-      }
-      else{
-        //var_dump($a[0]);
-      }
-
-
-    }
+   
 
   }
 
