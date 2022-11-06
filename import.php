@@ -139,16 +139,41 @@ foreach ($matched as $ma){
 }
 
 
+  $table = [];
+
   foreach($second as $sec){
 
 
 
-      var_dump($sec);
+        $object = new wpis();
+
+        $object->id = $second[1][0][0];
+        // $object->user_login=$second[0][0][0];
+        // $object->user_pass=$second[0][0][0];
+        // $object->user_nicename=$second[0][0][0];
+        // $object->user_email=$second[0][0][0];
+        // $object->user_url=$second[0][0][0];
+        // $object->user_registered=$second[0][0][0];
+        // $object->user_activation_key=$second[0][0][0];
+        // $object->user_status=$second[0][0][0];
+        // $object->display_name=$second[0][0][0];
+        // $object->nip=$second[0][0][0];
+        // $object->first_name=$second[0][0][0];
+        // $object->last_name=$second[0][0][0];
+        // $object->firma=$second[0][0][0];
+        // $object->first_address_line=$second[0][0][0];
+        // $object->second_address_line=$second[0][0][0];
+        // $object->city=$second[0][0][0];
+        // $object->kod=$second[0][0][0];
+        // $object->wojewodztwo=$second[0][0][0];
+        // $object->telefon=$second[0][0][0];
   
    
 
   }
 
+
+  var_dump($object->id);
 
 $sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, 
 `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, 
