@@ -294,10 +294,22 @@ foreach ($matched as $ma){
          
         }
 
+
+
+        if($second[$o][12][0]!=null){
+
+          $object->second_address_line=$second[$o][12][0][0];
+
+         }
+         else{
+
+          $object->second_address_line=null;
+         
+        }
         
     
         
-        // $object->first_address_line=$second[0][0][0];
+       
         // $object->second_address_line=$second[0][0][0];
         // $object->city=$second[0][0][0];
         // $object->kod=$second[0][0][0];
@@ -305,7 +317,7 @@ foreach ($matched as $ma){
         // $object->telefon=$second[0][0][0];
       
    
-        var_dump(  $object->first_address_line);
+        var_dump(  $object->second_address_line);
   }
 
 
