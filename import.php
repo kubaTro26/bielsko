@@ -190,9 +190,24 @@ foreach ($matched as $ma){
         }
 
 
+        if($$second[18][0]!=null){
+
+          $object->user_email=$second[18][0][0];
+
+         }
+         else{
+
+          $object->user_email=null;
+         
+        }
+
+
+
+
+
 
         
-        // $object->user_email=$second[0][0][0];
+         
         // $object->user_url=$second[0][0][0];
         // $object->user_registered=$second[0][0][0];
         // $object->user_activation_key=$second[0][0][0];
@@ -210,7 +225,7 @@ foreach ($matched as $ma){
         // $object->telefon=$second[0][0][0];
       
    
-        var_dump(  $object->user_nicename);
+        var_dump(   $object->user_email);
   }
 
 
