@@ -180,7 +180,7 @@ foreach ($matched as $ma){
 
          if($second[$o][21][0]!=null){
 
-          $object->user_nicename=$second[$o][21][0][0];
+          $object->user_nicename=$second[$o][19][0][0];
 
          }
          else{
