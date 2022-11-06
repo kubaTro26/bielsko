@@ -175,8 +175,23 @@ foreach ($matched as $ma){
         $object->user_login=null;
       
       }
-        // $object->user_pass=$second[0][0][0];
-        $object->user_nicename=$second[$o][17][0][0];
+
+         $object->user_pass=null;
+
+         if($second[$o][21][0]!=null){
+
+          $object->user_nicename=$second[$o][21][0][0];
+
+         }
+         else{
+
+          $object->user_nicename=null;
+         
+        }
+
+
+
+        
         // $object->user_email=$second[0][0][0];
         // $object->user_url=$second[0][0][0];
         // $object->user_registered=$second[0][0][0];
@@ -199,7 +214,7 @@ foreach ($matched as $ma){
   }
 
 
-  var_dump( $object->user_login);
+  var_dump(  $object->user_nicename);
 
 $sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, 
 `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, 
