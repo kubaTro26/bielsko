@@ -259,8 +259,20 @@ foreach ($matched as $ma){
          
         }
 
+
+        if($second[$o][6][0]!=null){
+
+          $object->last_name=$second[$o][6][0][0];
+
+         }
+         else{
+
+          $object->last_name=null;
+         
+        }
+
         
-        // $object->first_name=$second[0][0][0];
+        
         // $object->last_name=$second[0][0][0];
         // $object->firma=$second[0][0][0];
         // $object->first_address_line=$second[0][0][0];
@@ -271,7 +283,7 @@ foreach ($matched as $ma){
         // $object->telefon=$second[0][0][0];
       
    
-        var_dump(  $object->first_name);
+        var_dump(  $object->last_name);
   }
 
 
