@@ -147,7 +147,7 @@ foreach ($matched as $ma){
 
         $object = new wpis();
 
-        $object->id = $second[1][0];
+        $object->id = $second[1][0][0][0];
         // $object->user_login=$second[0][0][0];
         // $object->user_pass=$second[0][0][0];
         // $object->user_nicename=$second[0][0][0];
