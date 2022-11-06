@@ -141,13 +141,13 @@ foreach ($matched as $ma){
 
   $table = [];
 
-  foreach($second as $sec){
+  for($o=0;$o<count($second);$o++){
 
 
 
         $object = new wpis();
 
-        $object->id = $second[1][0][0][0];
+        $object->id = $second[$o][1][0][0];
         // $object->user_login=$second[0][0][0];
         // $object->user_pass=$second[0][0][0];
         // $object->user_nicename=$second[0][0][0];
@@ -173,7 +173,7 @@ foreach ($matched as $ma){
   }
 
 
-  var_dump($second);
+  var_dump( $object->id);
 
 $sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, 
 `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, 
