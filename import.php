@@ -178,7 +178,7 @@ foreach ($matched as $ma){
 
          $object->user_pass=null;
 
-         if($second[$o][21][0]!=null){
+         if($second[$o][19][0]!=null){
 
           $object->user_nicename=$second[$o][19][0][0];
 
