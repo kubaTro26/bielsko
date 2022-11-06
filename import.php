@@ -139,7 +139,11 @@ foreach ($matched as $ma){
 }
 
 
-    var_dump($second);
+  foreach($second as $sec){
+
+    var_dump($sec);
+
+  }
 
 
 $sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, 
