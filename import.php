@@ -148,7 +148,10 @@ foreach ($matched as $ma){
         $object = new wpis();
 
 
-      var_dump($second[$o][18][0]);
+      if($second[$o][18][0]==null){
+        echo 'null';
+
+      }
 
         $object->id = $second[$o][1][0][0];
         $object->user_login=$second[$o][7][0][0];
