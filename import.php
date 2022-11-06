@@ -192,7 +192,7 @@ foreach ($matched as $ma){
 
         if($second[$o][18][0]!=null){
 
-          $object->user_email=$second[18][0][0];
+          $object->user_email=$second[$o][18][0][0];
 
          }
          else{
