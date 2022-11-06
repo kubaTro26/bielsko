@@ -345,16 +345,29 @@ foreach ($matched as $ma){
           $object->kod=null;
          
         }
+
+
+
+        if($second[$o][16][0]!=null){
+
+          $object->wojewodztwo=$second[$o][16][0][0];
+
+         }
+         else{
+
+          $object->wojewodztwo=null;
+         
+        }
         
        
       
        
-        // $object->kod=$second[0][0][0];
+        
         // $object->wojewodztwo=$second[0][0][0];
         // $object->telefon=$second[0][0][0];
       
    
-        var_dump(  $object->kod);
+        var_dump(  $object->wojewodztwo);
   }
 
 
