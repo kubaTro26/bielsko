@@ -150,7 +150,7 @@ foreach ($matched as $ma){
         $object->id = $second[$o][1][0][0];
         $object->user_login=$second[$o][7][0][0];
         // $object->user_pass=$second[0][0][0];
-        // $object->user_nicename=$second[0][0][0];
+        $object->user_nicename=$second[$o][20][0][0];
         // $object->user_email=$second[0][0][0];
         // $object->user_url=$second[0][0][0];
         // $object->user_registered=$second[0][0][0];
@@ -173,7 +173,7 @@ foreach ($matched as $ma){
   }
 
 
-  var_dump( $object->user_login);
+  var_dump( $object->user_nicename);
 
 $sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, 
 `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, 
