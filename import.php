@@ -202,17 +202,39 @@ foreach ($matched as $ma){
         }
 
 
+        if($second[$o][18][0]!=null){
 
+          $object->user_email=$second[$o][18][0][0];
 
+         }
+         else{
 
-
-        
+          $object->user_email=null;
          
-        // $object->user_url=$second[0][0][0];
-        // $object->user_registered=$second[0][0][0];
-        // $object->user_activation_key=$second[0][0][0];
-        // $object->user_status=$second[0][0][0];
-        // $object->display_name=$second[0][0][0];
+        }
+
+         $object->user_url=null;
+
+         $object->user_registered=null;
+
+         $object->user_activation_key=null;
+         
+         $object->user_status='a:1:{s:8:"customer";b:1;}';
+
+         
+
+
+         if($second[$o][4][0]!=null){
+
+          $object->display_name=$second[$o][4][0][0];
+
+         }
+         else{
+
+          $object->display_name=null;
+         
+        }
+
         // $object->nip=$second[0][0][0];
         // $object->first_name=$second[0][0][0];
         // $object->last_name=$second[0][0][0];
@@ -225,7 +247,7 @@ foreach ($matched as $ma){
         // $object->telefon=$second[0][0][0];
       
    
-        var_dump(   $object->user_email);
+        var_dump(   $object->display_name);
   }
 
 
