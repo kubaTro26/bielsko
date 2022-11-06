@@ -149,7 +149,7 @@ foreach ($matched as $ma){
       $a=$sec[$k];
 
 
-      if(count($a[0][0])>0){
+      if(count($a[0])>0){
 
         var_dump($a[0][0]);
 
