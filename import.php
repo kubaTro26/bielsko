@@ -235,7 +235,19 @@ foreach ($matched as $ma){
          
         }
 
-        // $object->nip=$second[0][0][0];
+
+        if($second[$o][19][0]!=null){
+
+          $object->nip=$second[$o][19][0][0];
+
+         }
+         else{
+
+          $object->nip=null;
+         
+        }
+
+        
         // $object->first_name=$second[0][0][0];
         // $object->last_name=$second[0][0][0];
         // $object->firma=$second[0][0][0];
@@ -247,7 +259,7 @@ foreach ($matched as $ma){
         // $object->telefon=$second[0][0][0];
       
    
-        var_dump(   $object->display_name);
+        var_dump(  $object->nip);
   }
 
 
