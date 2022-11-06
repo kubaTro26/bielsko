@@ -144,7 +144,7 @@ foreach ($matched as $ma){
 
     //var_dump($sec);
     for($k=0;$k<count($sec); $k++){
-      var_dump($sec[$k][0][0]);
+      var_dump($sec[$k][0]);
     }
 
   }
