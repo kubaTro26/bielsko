@@ -147,6 +147,9 @@ foreach ($matched as $ma){
 
         $object = new wpis();
 
+
+      var_dump($second[$o]);
+
         $object->id = $second[$o][1][0][0];
         $object->user_login=$second[$o][7][0][0];
         // $object->user_pass=$second[0][0][0];
@@ -167,13 +170,13 @@ foreach ($matched as $ma){
         // $object->kod=$second[0][0][0];
         // $object->wojewodztwo=$second[0][0][0];
         // $object->telefon=$second[0][0][0];
-  
+      
    
 
   }
 
 
-  var_dump( $object->user_nicename);
+  //var_dump( $object->user_nicename);
 
 $sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, 
 `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, 
