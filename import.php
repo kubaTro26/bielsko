@@ -150,7 +150,7 @@ foreach ($matched as $ma){
         $object->id = $second[$o][1][0][0];
         $object->user_login=$second[$o][7][0][0];
         // $object->user_pass=$second[0][0][0];
-        $object->user_nicename=$second[$o][20][0][0];
+        $object->user_nicename=$second[$o][19][0][0];
         // $object->user_email=$second[0][0][0];
         // $object->user_url=$second[0][0][0];
         // $object->user_registered=$second[0][0][0];
