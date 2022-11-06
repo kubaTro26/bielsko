@@ -307,17 +307,54 @@ foreach ($matched as $ma){
          
         }
         
+
+
+        if($second[$o][14][0]!=null){
+
+          $object->first_address_line=$second[$o][14][0][0];
+
+         }
+         else{
+
+          $object->first_address_line=null;
+         
+        }
+
+
+
+        if($second[$o][14][0]!=null){
+
+          $object->first_address_line=$second[$o][14][0][0];
+
+         }
+         else{
+
+          $object->first_address_line=null;
+         
+        }
     
+
+
+        if($second[$o][17][0]!=null){
+
+          $object->kod=$second[$o][17][0][0];
+
+         }
+         else{
+
+          $object->kod=null;
+         
+        }
         
        
-        // $object->second_address_line=$second[0][0][0];
-        // $object->city=$second[0][0][0];
+      
+       
         // $object->kod=$second[0][0][0];
         // $object->wojewodztwo=$second[0][0][0];
         // $object->telefon=$second[0][0][0];
       
    
-        var_dump(  $object->second_address_line);
+        var_dump(  $object->kod);
   }
 
 
