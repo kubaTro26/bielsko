@@ -385,7 +385,7 @@ foreach ($matched as $ma){
             `second_address_line`, `city`, `kod`, `wojewodztwo`, `telefon`) VALUES
              ($object->id, $object->user_login, $object->user_pass, $object->user_nicename, $object->user_email,
              $object->user_url,$object->user_registered, $object->user_activation_key, $object->user_status,
-             $object->display_name, '', '', '',
+             $object->display_name, $object->nip, '', '',
                '', '', '', '', '', '', '')";
 
           //  $object->user_pass, $object->user_nicename, $object->user_email, $object->user_url,
