@@ -351,9 +351,9 @@ foreach ($matched as $ma){
         }
 
 
-        if($second[$o][7][0]!=null){
+        if($second[$o][9][0]!=null){
 
-          $object->telefon=$second[$o][7][0][0];
+          $object->telefon=$second[$o][9][0][0];
 
          }
          else{
