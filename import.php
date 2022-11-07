@@ -384,7 +384,7 @@ foreach ($matched as $ma){
         `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, 
         `display_name`, `nip`, `first_name`, `last_name`, `firma`, `first_address_line`, `second_address_line`,
          `city`, `kod`, `wojewodztwo`, `telefon`) VALUES ($object->id, $object->user_login ,
-          '' ,'','','','','','','','','','','','','','','','')"; 
+          ``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``)"; 
 
 
 
