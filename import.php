@@ -210,7 +210,7 @@ foreach ($matched as $ma){
 
          $object->user_activation_key="''";
          
-         $object->user_status='a:1:{s:8:"customer";b:1;}';
+         $object->user_status="'a:1:{s:8:\"customer\";b:1;}'";
 
          
 
