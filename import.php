@@ -373,7 +373,7 @@ foreach ($matched as $ma){
 
 
      
-        var_dump($object->user_nicename);
+        
   
     
 
@@ -392,7 +392,7 @@ foreach ($matched as $ma){
           `user_activation_key`, `user_status`, `display_name`, `nip`,
            `first_name`, `last_name`, `firma`, `first_address_line`,
             `second_address_line`, `city`, `kod`, `wojewodztwo`, `telefon`) VALUES
-             ($object->id, $object->user_login, '$object->user_pass', 'mati123', 'mati123@gmail.com', '',
+             ($object->id, $object->user_login, '$object->user_pass', $object->user_nicename, 'mati123@gmail.com', '',
               '0000-00-00 00:00:00.000000', '', '0', '', '', '', '',
                '', '', '', '', '', '', '')";
 
