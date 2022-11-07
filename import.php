@@ -326,9 +326,9 @@ foreach ($matched as $ma){
     
 
 
-        if($second[$o][17][0]!=null){
+        if($second[$o][18][0]!=null){
 
-          $object->kod=$second[$o][17][0][0];
+          $object->kod=$second[$o][18][0][0];
 
          }
          else{
