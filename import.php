@@ -190,21 +190,9 @@ foreach ($matched as $ma){
         }
 
 
-        if($second[$o][18][0]!=null){
+        if($second[$o][19][0]!=null){
 
-          $object->user_email=$second[$o][18][0][0];
-
-         }
-         else{
-
-          $object->user_email="''";
-         
-        }
-
-
-        if($second[$o][18][0]!=null){
-
-          $object->user_email=$second[$o][18][0][0];
+          $object->user_email=$second[$o][19][0][0];
 
          }
          else{
@@ -212,6 +200,9 @@ foreach ($matched as $ma){
           $object->user_email="''";
          
         }
+
+
+  
 
          $object->user_url="''";
 
