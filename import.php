@@ -176,7 +176,7 @@ foreach ($matched as $ma){
       
       }
 
-         $object->user_pass="'null'";
+         $object->user_pass="";
 
          if($second[$o][21][0]!=null){
 
