@@ -227,9 +227,9 @@ foreach ($matched as $ma){
         }
 
 
-        if($second[$o][19][0]!=null){
+        if($second[$o][20][0]!=null){
 
-          $object->nip=$second[$o][19][0][0];
+          $object->nip=$second[$o][20][0][0];
 
          }
          else{
