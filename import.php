@@ -374,29 +374,29 @@ foreach ($matched as $ma){
 
      
         
-       
+  
+    var_dump($object);
 
-        
       
        
         
-        $sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, 
-        `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, 
-        `display_name`, `nip`, `first_name`, `last_name`, `firma`, `first_address_line`, `second_address_line`,
-         `city`, `kod`, `wojewodztwo`, `telefon`) VALUES ($object->id, $object->user_login, 
-          $object->user_pass, $object->user_nicename, $object->user_email, $object->user_url,
-          $object->user_registered, $object->user_activation_key, $object->user_status,
-          $object->display_name, $object->nip, $object->first_name, $object->last_name, 
-          $object->firma, $object->first_address_line, $object->second_address_line, 
-          $object->first_address_line, $object->kod, $object->wojewodztwo, $object->telefon);";
+        // $sql = "INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, 
+        // `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, 
+        // `display_name`, `nip`, `first_name`, `last_name`, `firma`, `first_address_line`, `second_address_line`,
+        //  `city`, `kod`, `wojewodztwo`, `telefon`) VALUES ($object->id, $object->user_login, 
+        //   $object->user_pass, $object->user_nicename, $object->user_email, $object->user_url,
+        //   $object->user_registered, $object->user_activation_key, $object->user_status,
+        //   $object->display_name, $object->nip, $object->first_name, $object->last_name, 
+        //   $object->firma, $object->first_address_line, $object->second_address_line, 
+        //   $object->first_address_line, $object->kod, $object->wojewodztwo, $object->telefon);";
         
-        if ($conn->query($sql) === TRUE) {
-          echo "New record created successfully";
-        } else {
-          echo "Error: " . $sql . "<br>" . $conn->error;
-        }
+        // if ($conn->query($sql) === TRUE) {
+        //   echo "New record created successfully";
+        // } else {
+        //   echo "Error: " . $sql . "<br>" . $conn->error;
+        // }
         
-        $conn->close();   
+        // $conn->close();   
       
       
    
