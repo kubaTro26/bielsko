@@ -386,7 +386,7 @@ foreach ($matched as $ma){
              ($object->id, $object->user_login, $object->user_pass, $object->user_nicename, $object->user_email,
              $object->user_url,$object->user_registered, $object->user_activation_key, $object->user_status,
              $object->display_name, $object->nip, $object->first_name, $object->last_name,
-               '', '', '', '', '', '', '')";
+             $object->firma, '', '', '', '', '', '')";
 
           //  $object->user_pass, $object->user_nicename, $object->user_email, $object->user_url,
           //  $object->user_registered, $object->user_activation_key, $object->user_status,
