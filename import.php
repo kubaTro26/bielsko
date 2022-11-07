@@ -160,7 +160,7 @@ foreach ($matched as $ma){
 
       else{
 
-        $object->id = null;
+        $object->id = "''";
       
       }
       
@@ -185,7 +185,7 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->user_nicename=null;
+          $object->user_nicename="''";
          
         }
 
@@ -197,7 +197,7 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->user_email=null;
+          $object->user_email="''";
          
         }
 
@@ -209,15 +209,15 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->user_email=null;
+          $object->user_email="''";
          
         }
 
-         $object->user_url=null;
+         $object->user_url="''";
 
-         $object->user_registered=null;
+         $object->user_registered="''";
 
-         $object->user_activation_key=null;
+         $object->user_activation_key="''";
          
          $object->user_status='a:1:{s:8:"customer";b:1;}';
 
@@ -231,7 +231,7 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->display_name=null;
+          $object->display_name="''";
          
         }
 
@@ -243,7 +243,7 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->nip=null;
+          $object->nip="''";
          
         }
 
@@ -255,7 +255,7 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->first_name=null;
+          $object->first_name="''";
          
         }
 
@@ -267,7 +267,7 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->last_name=null;
+          $object->last_name="''";
          
         }
 
@@ -278,7 +278,7 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->firma=null;
+          $object->firma="''";
          
         }
 
@@ -290,7 +290,7 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->first_address_line=null;
+          $object->first_address_line="''";
          
         }
 
@@ -303,7 +303,7 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->second_address_line=null;
+          $object->second_address_line="''";
          
         }
         
@@ -316,7 +316,7 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->first_address_line=null;
+          $object->first_address_line="''";
          
         }
 
@@ -329,7 +329,7 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->first_address_line=null;
+          $object->first_address_line="''";
          
         }
     
@@ -342,7 +342,7 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->kod=null;
+          $object->kod="''";
          
         }
 
@@ -355,7 +355,7 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->wojewodztwo=null;
+          $object->wojewodztwo="''";
          
         }
 
@@ -367,7 +367,7 @@ foreach ($matched as $ma){
          }
          else{
 
-          $object->telefon=null;
+          $object->telefon="''";
          
         }
 
@@ -392,8 +392,8 @@ foreach ($matched as $ma){
           `user_activation_key`, `user_status`, `display_name`, `nip`,
            `first_name`, `last_name`, `firma`, `first_address_line`,
             `second_address_line`, `city`, `kod`, `wojewodztwo`, `telefon`) VALUES
-             ($object->id, $object->user_login, $object->user_pass, $object->user_nicename, 'mati123@gmail.com', '',
-              '0000-00-00 00:00:00.000000', '', '0', '', '', '', '',
+             ($object->id, $object->user_login, $object->user_pass, $object->user_nicename, $object->user_email,
+              '','0000-00-00 00:00:00.000000', '', '0', '', '', '', '',
                '', '', '', '', '', '', '')";
 
           //  $object->user_pass, $object->user_nicename, $object->user_email, $object->user_url,
