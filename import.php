@@ -294,9 +294,9 @@ foreach ($matched as $ma){
 
 
 
-        if($second[$o][13][0]!=null){
+        if($second[$o][12][0]!=null){
 
-          $object->second_address_line=$second[$o][13][0][0];
+          $object->second_address_line=$second[$o][12][0][0];
 
          }
          else{
