@@ -142,7 +142,7 @@ foreach ($matched as $ma){
   $table = [];
 
 
-  var_dump($second);
+  
 
 
   for($o=0;$o<count($second);$o++){
@@ -369,7 +369,7 @@ foreach ($matched as $ma){
 
      
         
-  var_dump($object->telefon);
+
     
 
       
