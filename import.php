@@ -127,7 +127,7 @@ foreach ($matched as $ma){
 
 
 
-        var_dump($st);
+        
 
         if($i==32){
           
