@@ -126,6 +126,9 @@ foreach ($matched as $ma){
         $first[]=$st;
 
 
+
+        var_dump($st);
+
         if($i==32){
           
 
