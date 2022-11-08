@@ -185,9 +185,9 @@ foreach ($matched as $ma){
 
          $object->user_pass="''";
 
-         if($second[$o][21][0]!=null){
+         if($second[$o][6][0]!=null){
 
-          $object->user_nicename=$second[$o][21][0][0];
+          $object->user_nicename=$second[$o][6][0][0];
 
          }
          else{
@@ -197,9 +197,9 @@ foreach ($matched as $ma){
         }
 
 
-        if($second[$o][19][0]!=null){
+        if($second[$o][18][0]!=null){
 
-          $object->user_email=$second[$o][19][0][0];
+          $object->user_email=$second[$o][18][0][0];
 
          }
          else{
@@ -222,9 +222,9 @@ foreach ($matched as $ma){
          
 
 
-         if($second[$o][21][0]!=null){
+         if($second[$o][6][0]!=null){
 
-          $object->display_name=$second[$o][21][0][0];
+          $object->display_name=$second[$o][6][0][0];
 
          }
          else{
@@ -234,9 +234,9 @@ foreach ($matched as $ma){
         }
 
 
-        if($second[$o][20][0]!=null){
+        if($second[$o][19][0]!=null){
 
-          $object->nip=$second[$o][20][0][0];
+          $object->nip=$second[$o][19][0][0];
 
          }
          else{
