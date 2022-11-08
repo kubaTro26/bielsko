@@ -305,12 +305,12 @@ foreach ($matched as $ma){
          
         }
         
-        
 
 
-        if($second[$o][13][0]!=null){
 
-          $object->first_address_line=$second[$o][13][0][0];
+        if($second[$o][14][0]!=null){
+
+          $object->first_address_line=$second[$o][14][0][0];
 
          }
          else{
