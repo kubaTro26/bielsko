@@ -408,7 +408,7 @@ foreach ($matched as $ma){
           echo "Error: " . $sql . "<br>" . $conn->error;
         }
         
-        $conn->close();   
+       
       
       
    
@@ -416,7 +416,7 @@ foreach ($matched as $ma){
   }
 
 
- 
+  $conn->close();   
 
 
 ?>
