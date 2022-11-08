@@ -135,7 +135,7 @@ foreach ($matched as $ma){
           $second[]=$first;
         }
         
-
+        var_dump($first);
         
 
      }
