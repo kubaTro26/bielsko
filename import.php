@@ -135,7 +135,7 @@ foreach ($matched as $ma){
           $second[]=$first;
         }
         
-        var_dump($first);
+        
         
 
      }
@@ -145,7 +145,7 @@ foreach ($matched as $ma){
   $table = [];
 
 
-  
+  var_dump($second);
 
 
   for($o=0;$o<count($second);$o++){
