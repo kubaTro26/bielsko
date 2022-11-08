@@ -320,9 +320,9 @@ foreach ($matched as $ma){
 
 
 
-        if($second[$o][15][0]!=null){
+        if($second[$o][14][0]!=null){
 
-          $object->first_address_line=$second[$o][15][0][0];
+          $object->first_address_line=$second[$o][14][0][0];
 
          }
          else{
