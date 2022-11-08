@@ -346,9 +346,9 @@ foreach ($matched as $ma){
 
 
 
-        if($second[$o][16][0]!=null){
+        if($second[$o][15][0]!=null){
 
-          $object->wojewodztwo=$second[$o][16][0][0];
+          $object->wojewodztwo=$second[$o][15][0][0];
 
          }
          else{
