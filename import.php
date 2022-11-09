@@ -170,9 +170,9 @@ foreach ($matched as $ma){
       
       }
       
-      if($second[$o][6][0]!=null){
+      if($second[$o][7][0]!=null){
 
-        $object->user_login=$second[$o][6][0][0];
+        $object->user_login=$second[$o][7][0][0];
 
       }
 
@@ -268,9 +268,9 @@ foreach ($matched as $ma){
          
         }
 
-        if($second[$o][7][0]!=null){
+        if($second[$o][6][0]!=null){
 
-          $object->firma=$second[$o][7][0][0];
+          $object->firma=$second[$o][6][0][0];
 
          }
          else{
