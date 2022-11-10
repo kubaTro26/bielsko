@@ -57,7 +57,7 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 								'description' => '',
 							),
 							'first_address_line'  => array(
-								'label'       => __( 'first_address_line', 'woocommerce' ),
+								'label'       => __( 'Pierwsza linia adresu', 'woocommerce' ),
 								'description' => '',
 							),
 							'second_address_line'  => array(
