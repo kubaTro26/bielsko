@@ -61,7 +61,7 @@ if ( ! class_exists( 'WC_Admin_Profile', false ) ) :
 								'description' => '',
 							),
 							'second_address_line'  => array(
-								'label'       => __( 'second_address_line', 'woocommerce' ),
+								'label'       => __( 'Druga linia adresu', 'woocommerce' ),
 								'description' => '',
 							),
 							'city'       => array(
