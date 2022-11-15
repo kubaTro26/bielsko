@@ -317,6 +317,11 @@
             $('#kod').val(window.kod);
             }
 
+
+
+
+//tutaj
+
             window.premiej = response.match(/Miejscowosc.*Miejscowosc/);
 
 
@@ -343,6 +348,32 @@
 
             }
             
+
+
+            window.preul2 = response.match(/fiz_adSiedzNumerNieruchomosci.*fiz_adSiedzNumerNieruchomosci/);
+                    
+
+            if(window.preul2 != null){
+
+              window.ul2 = window.preul2[0].replace('fiz_adSiedzNumerNieruchomosci>', '');
+ 
+              window.ul2 = window.ul2.replace('fiz_adSiedzNumerNieruchomosci', '');
+              window.ul2 = window.ul2.replace('fiz_adSiedzNumerNieruchomosci', '');
+              window.ul2 = window.ul2.replace('\\', '');
+              window.ul2 = window.ul2.replace('\\', '');
+              window.ul2 = window.ul2.replace('\\', '');
+              window.ul2 = window.ul2.replace('\\', '');
+              window.ul2 = window.ul2.replace('\\', '');
+              window.ul2 = window.ul2.replace('<', '');
+              window.ul2 = window.ul2.replace('/', '');
+
+              window.ul2 = change(window.ul2);
+
+              $('#second_address_line').val(window.ul2);
+
+              }
+
+
 
 
             
