@@ -114,7 +114,7 @@
             }
           ).done( function( response ) {
 
-            console.log(response);
+           // console.log(response);
 
             window.data = response;
 
