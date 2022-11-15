@@ -73,7 +73,7 @@
         method: 'post'
       }
     ).done( function( response ) {
-      console.log(response);
+      
 
     }).fail( function( jqxhr, textStatus, error ) {
        
@@ -101,7 +101,7 @@
 
 
 
-      console.log(e.target);
+      
 
            $.ajax(
             {
@@ -114,7 +114,8 @@
             }
           ).done( function( response ) {
 
-           // console.log(response);
+           
+
 
             window.data = response;
 
@@ -572,7 +573,7 @@
               }
             ).done( function( response ) {
   
-              console.log(response);
+              
 
               window.response2 = response;
 
