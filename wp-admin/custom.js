@@ -223,15 +223,15 @@
       
                     }
 
-                    window.preul2 = response3.match(/praw_adSiedzUlica_Nazwa.*praw_adSiedzUlica_Nazwa/);
+                    window.preul2 = response3.match(/fiz_adSiedzNumerNieruchomosci.*fiz_adSiedzNumerNieruchomosci/);
                     
 
                     if(window.preul2 != null){
       
-                      window.ul2 = window.preul2[0].replace('praw_adSiedzUlica_Nazwa>', '');
+                      window.ul2 = window.preul2[0].replace('fiz_adSiedzNumerNieruchomosci>', '');
          
-                      window.ul2 = window.ul2.replace('praw_adSiedzUlica_Nazwa', '');
-                      window.ul2 = window.ul2.replace('praw_adSiedzUlica_Nazwa', '');
+                      window.ul2 = window.ul2.replace('fiz_adSiedzNumerNieruchomosci', '');
+                      window.ul2 = window.ul2.replace('fiz_adSiedzNumerNieruchomosci', '');
                       window.ul2 = window.ul2.replace('\\', '');
                       window.ul2 = window.ul2.replace('\\', '');
                       window.ul2 = window.ul2.replace('\\', '');
