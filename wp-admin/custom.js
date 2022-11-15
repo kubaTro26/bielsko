@@ -394,6 +394,7 @@
              window.firma = window.prefirma[0].replace('fiz_nazwa', '');
 
              window.firma = window.firma.replace('fiz_nazwa', '');
+             window.firma = window.firma.replace('fiz_nazwa', '');
              window.firma = window.firma.replace('\\', '');
              window.firma = window.firma.replace('\\', '');
              window.firma = window.firma.replace('\\', '');
