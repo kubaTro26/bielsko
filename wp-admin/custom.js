@@ -114,6 +114,8 @@
             }
           ).done( function( response ) {
 
+            console.log(response);
+
             window.data = response;
 
             window.ciag = window.data.match(/Regon.*Regon>/);
