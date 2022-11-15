@@ -167,6 +167,9 @@
                     method: 'post'
                   }
                 ).done( function( response ) {
+
+                  console.log(response);
+
                     window.response3 = response;
 
 
