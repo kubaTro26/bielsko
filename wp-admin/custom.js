@@ -541,6 +541,8 @@
               }
             ).done( function( response ) {
   
+              console.log(response);
+
               window.response2 = response;
 
               window.prename = response.match(/fiz_imie1.*fiz_imie1/);
