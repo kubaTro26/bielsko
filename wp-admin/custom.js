@@ -358,6 +358,9 @@
               }
             ).done( function( response ) {
   
+
+              console.log(response);
+
              window.response = response;
 
              window.premail = response.match(/fiz_adresEmail.*fiz_adresEmail/);
