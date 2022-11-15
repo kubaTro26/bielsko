@@ -359,7 +359,7 @@
             ).done( function( response ) {
   
 
-              console.log(response);
+            
 
              window.response = response;
 
@@ -386,7 +386,7 @@
 
 
 
-             window.prefirma = response.match(/fiz_nazwaSkrocona.*fiz_nazwaSkrocona/);
+             window.prefirma = response.match(/fiz_nazwa.*fiz_nazwa/);
 
              if(window.prefirma != null){
 
