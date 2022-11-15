@@ -224,28 +224,7 @@
       
                     }
 
-                    window.preul2 = response3.match(/fiz_adSiedzNumerNieruchomosci.*fiz_adSiedzNumerNieruchomosci/);
-                    
-
-                    if(window.preul2 != null){
-      
-                      window.ul2 = window.preul2[0].replace('fiz_adSiedzNumerNieruchomosci>', '');
-         
-                      window.ul2 = window.ul2.replace('fiz_adSiedzNumerNieruchomosci', '');
-                      window.ul2 = window.ul2.replace('fiz_adSiedzNumerNieruchomosci', '');
-                      window.ul2 = window.ul2.replace('\\', '');
-                      window.ul2 = window.ul2.replace('\\', '');
-                      window.ul2 = window.ul2.replace('\\', '');
-                      window.ul2 = window.ul2.replace('\\', '');
-                      window.ul2 = window.ul2.replace('\\', '');
-                      window.ul2 = window.ul2.replace('<', '');
-                      window.ul2 = window.ul2.replace('/', '');
-
-                      window.ul2 = change(window.ul2);
-        
-                      $('#second_address_line').val(window.ul2);
-        
-                      }
+                 
                    
 
 
@@ -473,6 +452,33 @@
              }
 
              }
+
+
+             window.preul2 = response.match(/fiz_adSiedzNumerNieruchomosci.*fiz_adSiedzNumerNieruchomosci/);
+                    
+
+             if(window.preul2 != null){
+
+               window.ul2 = window.preul2[0].replace('fiz_adSiedzNumerNieruchomosci>', '');
+  
+               window.ul2 = window.ul2.replace('fiz_adSiedzNumerNieruchomosci', '');
+               window.ul2 = window.ul2.replace('fiz_adSiedzNumerNieruchomosci', '');
+               window.ul2 = window.ul2.replace('\\', '');
+               window.ul2 = window.ul2.replace('\\', '');
+               window.ul2 = window.ul2.replace('\\', '');
+               window.ul2 = window.ul2.replace('\\', '');
+               window.ul2 = window.ul2.replace('\\', '');
+               window.ul2 = window.ul2.replace('<', '');
+               window.ul2 = window.ul2.replace('/', '');
+
+               window.ul2 = change(window.ul2);
+ 
+               $('#second_address_line').val(window.ul2);
+ 
+               }
+
+
+
 
 
              window.prewoj = response.match(/fiz_adSiedzWojewodztwo_Nazwa.*fiz_adSiedzWojewodztwo_Nazwa/);
