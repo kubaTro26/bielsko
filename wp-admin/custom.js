@@ -435,7 +435,7 @@
 
              if(window.regon.length<10){
 
-             $('#second_address_line').val(window.ul);
+             $('#first_address_line').val(window.ul);
 
 
              }
