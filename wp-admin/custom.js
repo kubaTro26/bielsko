@@ -386,7 +386,7 @@
 
 
 
-             window.prefirma = response.match(/fiz_nazwa.*fiz_nazwa/);
+             window.prefirma = response.match(/fiz_nazwa>.*<fiz_nazwa/);
 
              if(window.prefirma != null){
 
