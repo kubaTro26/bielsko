@@ -732,7 +732,7 @@ class WP_Plugin_Install_List_Table extends WP_List_Table {
 			}
 			?>
 			<div class="plugin-card-top">
-				<div class="name column-name">
+				<div class="name column-name a">
 					<h3>
 						<a href="<?php echo esc_url( $details_link ); ?>" class="thickbox open-plugin-details-modal">
 						<?php echo $title; ?>
