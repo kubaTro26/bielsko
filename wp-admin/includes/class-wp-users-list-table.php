@@ -429,7 +429,7 @@ class WP_Users_List_Table extends WP_List_Table {
 	 */
 	public function single_row( $user_object, $style = '', $role = '', $numposts = 0 ) {
 
-		var_dump($user_object);
+	//	var_dump($user_object);
 		if ( ! ( $user_object instanceof WP_User ) ) {
 			$user_object = get_userdata( (int) $user_object );
 		}
