@@ -428,6 +428,8 @@ class WP_Users_List_Table extends WP_List_Table {
 	 * @return string Output for a single row.
 	 */
 	public function single_row( $user_object, $style = '', $role = '', $numposts = 0 ) {
+
+		var_dump($user_object);
 		if ( ! ( $user_object instanceof WP_User ) ) {
 			$user_object = get_userdata( (int) $user_object );
 		}
@@ -553,8 +555,8 @@ class WP_Users_List_Table extends WP_List_Table {
 			if ( in_array( $column_name, $hidden, true ) ) {
 				$classes .= ' hidden';
 			}
-
-			$data = 'data-colnamee="' . esc_attr( wp_strip_all_tags( $column_display_name ) ) . '"';
+			//nazwa123
+			$data = 'data-colname="' . esc_attr( wp_strip_all_tags( $column_display_name ) ) . '"';
 
 			$attributes = "class='$classes' $data";
 
