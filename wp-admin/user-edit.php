@@ -38,12 +38,14 @@ if ( IS_PROFILE_PAGE ) {
 } else {
 	// Used in the HTML title tag.
 	/* translators: %s: User's display name. */
-	$title = __( 'Edit Userr %s' );
+	$title = __( 'Edit User %s' );
 }
-
+//dumping21
 if ( current_user_can( 'edit_users' ) && ! IS_PROFILE_PAGE ) {
+	echo 'can';
 	$submenu_file = 'users.php';
 } else {
+	echo 'can not';
 	$submenu_file = 'profile.php';
 }
 
