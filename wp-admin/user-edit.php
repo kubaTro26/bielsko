@@ -194,6 +194,8 @@ switch ( $action ) {
 			}
 			
 			//wp_redirect( $redirect );
+
+			var_dump($_POST['user_email']);
 			exit;
 		}
 
