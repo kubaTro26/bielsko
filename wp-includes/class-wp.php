@@ -771,7 +771,7 @@ class WP {
 
 		$parsed = $this->parse_request( $query_args );
 
-		var_dump($parsed);
+		
 
 		$this->send_headers();
 
