@@ -40,6 +40,8 @@ if ( IS_PROFILE_PAGE ) {
 	/* translators: %s: User's display name. */
 	$title = __( 'Edit User %s' );
 }
+
+var_dump($title);
 //dumping21
 if ( current_user_can( 'edit_users' ) && ! IS_PROFILE_PAGE ) {
 	//dumping21
