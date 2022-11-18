@@ -12,7 +12,7 @@ require_once __DIR__ . '/admin.php';
 wp_reset_vars( array( 'action', 'user_id', 'wp_http_referer' ) );
 
 
-var_dump($user_id);
+//var_dump($user_id);
 $user_id      = (int) $user_id;
 $current_user = wp_get_current_user();
 
