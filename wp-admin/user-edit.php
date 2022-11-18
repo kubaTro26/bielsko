@@ -14,7 +14,7 @@
 require_once __DIR__ . '/admin.php';
 
 
-var_dump($user_id);
+
 
 wp_reset_vars( array( 'action', 'user_id', 'wp_http_referer' ) );
 
@@ -205,7 +205,7 @@ switch ( $action ) {
 			wp_die( __( 'Sorry, you are not allowed to edit this user.' ) );
 		}
 
-	//	var_dump($profile_user);
+		var_dump($profile_user);
 
 
 		$title    = sprintf( $title, $profile_user->display_name );
