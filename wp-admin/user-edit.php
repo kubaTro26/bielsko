@@ -38,7 +38,7 @@ if ( IS_PROFILE_PAGE ) {
 } else {
 	// Used in the HTML title tag.
 	/* translators: %s: User's display name. */
-	$title = __( 'Edit User %s' );
+	$title = __( 'Edit Userr %s' );
 }
 
 if ( current_user_can( 'edit_users' ) && ! IS_PROFILE_PAGE ) {
