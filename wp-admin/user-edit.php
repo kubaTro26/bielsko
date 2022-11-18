@@ -183,7 +183,7 @@ switch ( $action ) {
 			if ( $wp_http_referer ) {
 				$redirect = add_query_arg( 'wp_http_referer', urlencode( $wp_http_referer ), $redirect );
 			}
-			wp_redirect( $redirect );
+			//wp_redirect( $redirect );
 			exit;
 		}
 
