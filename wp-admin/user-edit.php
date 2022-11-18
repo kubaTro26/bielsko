@@ -41,7 +41,7 @@ if ( IS_PROFILE_PAGE ) {
 	$title = __( 'Edit User %s' );
 }
 
-var_dump($title);
+
 //dumping21
 if ( current_user_can( 'edit_users' ) && ! IS_PROFILE_PAGE ) {
 	//dumping21
@@ -194,6 +194,9 @@ switch ( $action ) {
 		if ( ! current_user_can( 'edit_user', $user_id ) ) {
 			wp_die( __( 'Sorry, you are not allowed to edit this user.' ) );
 		}
+
+		var_dump($profile_user);
+
 
 		$title    = sprintf( $title, $profile_user->display_name );
 		$sessions = WP_Session_Tokens::get_instance( $profile_user->ID );
