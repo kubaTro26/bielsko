@@ -1483,6 +1483,10 @@ class WP_Rewrite {
 	 */
 	public function wp_rewrite_rules() {
 		$this->rules = get_option( 'rewrite_rules' );
+
+		echo 'rules';
+		var_dump($this->rules);
+
 		if ( empty( $this->rules ) ) {
 			$this->matches = 'matches';
 			$this->rewrite_rules();

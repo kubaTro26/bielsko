@@ -16944,3 +16944,4 @@ Stack trace:
 [25-Oct-2022 09:46:50 UTC] PHP Notice:  Undefined property: stdClass::$meta_key in /home/weblide2/domains/mbm.edu.pl/public_html/zamowienia-bielsko/wp-content/plugins/woocommerce/includes/data-stores/class-wc-customer-data-store.php on line 97
 [25-Oct-2022 09:46:50 UTC] PHP Notice:  Undefined property: stdClass::$meta_key in /home/weblide2/domains/mbm.edu.pl/public_html/zamowienia-bielsko/wp-content/plugins/woocommerce/includes/data-stores/class-wc-customer-data-store.php on line 98
 [25-Oct-2022 09:46:50 UTC] PHP Notice:  Undefined property: stdClass::$meta_key in /home/weblide2/domains/mbm.edu.pl/public_html/zamowienia-bielsko/wp-content/plugins/woocommerce/includes/data-stores/class-wc-customer-data-store.php on line 99
+[18-Nov-2022 16:16:06 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'weblide2_mbmzam'@'localhost' (using password: YES) in /home/kuba/Dokumenty/bielsko/wp-includes/wp-db.php on line 1756

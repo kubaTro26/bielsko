@@ -176,6 +176,8 @@ switch ( $action ) {
 			}
 		}
 
+
+		
 		// Update the user.
 		$errors = edit_user( $user_id );
 
@@ -195,7 +197,7 @@ switch ( $action ) {
 			
 			//wp_redirect( $redirect );
 
-			var_dump($_POST['billing_email']);
+			//var_dump($_POST['billing_email']);
 			exit;
 		}
 

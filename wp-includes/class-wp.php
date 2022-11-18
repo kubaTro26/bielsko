@@ -133,6 +133,7 @@ class WP {
 	 * @return bool Whether the request was parsed.
 	 */
 	public function parse_request( $extra_query_vars = '' ) {
+		
 		global $wp_rewrite;
 
 		/**
@@ -765,6 +766,7 @@ class WP {
 	 * @param string|array $query_args Passed to parse_request().
 	 */
 	public function main( $query_args = '' ) {
+
 		$this->init();
 
 		$parsed = $this->parse_request( $query_args );
