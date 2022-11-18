@@ -231,7 +231,7 @@ switch ( $action ) {
 		<?php endif; ?>
 
 		<div class="wrap" id="profile-page">
-			<h1 class="wp-heading-inline h">
+			<h1 class="wp-heading-inline h1">
 					<?php echo esc_html( $title ); ?>
 			</h1>
 
