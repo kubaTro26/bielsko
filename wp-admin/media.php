@@ -118,7 +118,7 @@ switch ( $action ) {
 		?>
 
 	<div class="wrap">
-	<h1 class="wp-heading-inline">
+	<h1 class="wp-heading-inline w">
 		<?php
 		echo esc_html( $title );
 		?>

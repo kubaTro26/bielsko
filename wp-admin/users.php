@@ -620,7 +620,7 @@ switch ( $wp_list_table->current_action() ) {
 		?>
 
 	<div class="wrap">
-	<h1 class="wp-heading-inline">
+	<h1 class="wp-heading-inline i">
 		<?php
 		echo esc_html( $title );
 		?>

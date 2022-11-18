@@ -717,7 +717,7 @@ elseif ( isset( $_GET['deleted'] ) ) :
 <?php endif; ?>
 
 <div class="wrap">
-<h1 class="wp-heading-inline">
+<h1 class="wp-heading-inline g">
 <?php
 echo esc_html( $title );
 ?>

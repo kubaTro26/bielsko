@@ -371,7 +371,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 ?>
 
 <div class="wrap">
-<h1 class="wp-heading-inline">
+<h1 class="wp-heading-inline j">
 <?php
 echo esc_html( $title );
 ?>

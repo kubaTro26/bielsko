@@ -136,7 +136,7 @@ get_current_screen()->set_screen_reader_content(
 require_once ABSPATH . 'wp-admin/admin-header.php';
 ?>
 <div class="wrap <?php echo esc_attr( "plugin-install-tab-$tab" ); ?>">
-<h1 class="wp-heading-inline">
+<h1 class="wp-heading-inline y">
 <?php
 echo esc_html( $title );
 ?>

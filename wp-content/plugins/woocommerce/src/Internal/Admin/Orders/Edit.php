@@ -193,7 +193,7 @@ class Edit {
 		$referer       = wp_get_referer();
 		?>
 		<div class="wrap">
-		<h1 class="wp-heading-inline">
+		<h1 class="wp-heading-inline k">
 			<?php echo esc_html( 'Edit order' ); ?>
 		</h1>
 		<?php

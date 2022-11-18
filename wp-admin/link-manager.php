@@ -95,7 +95,7 @@ if ( ! current_user_can( 'manage_links' ) ) {
 ?>
 
 <div class="wrap nosubsub">
-<h1 class="wp-heading-inline">
+<h1 class="wp-heading-inline u">
 <?php
 echo esc_html( $title );
 ?>

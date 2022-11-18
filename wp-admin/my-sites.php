@@ -60,7 +60,7 @@ if ( $updated ) { ?>
 <?php } ?>
 
 <div class="wrap">
-<h1 class="wp-heading-inline">
+<h1 class="wp-heading-inline z">
 <?php
 echo esc_html( $title );
 ?>
