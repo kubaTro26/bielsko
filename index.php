@@ -13,7 +13,7 @@
  */
 
 
-echo 'index';
+echo 'index123';
 
 define( 'WP_USE_THEMES', true );
 
