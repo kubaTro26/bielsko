@@ -195,7 +195,7 @@ switch ( $action ) {
 			wp_die( __( 'Sorry, you are not allowed to edit this user.' ) );
 		}
 
-		var_dump($profile_user);
+	//	var_dump($profile_user);
 
 
 		$title    = sprintf( $title, $profile_user->display_name );
