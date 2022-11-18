@@ -133,7 +133,7 @@ class WP {
 	 * @return bool Whether the request was parsed.
 	 */
 	public function parse_request( $extra_query_vars = '' ) {
-		
+
 		global $wp_rewrite;
 
 		/**
@@ -770,6 +770,8 @@ class WP {
 		$this->init();
 
 		$parsed = $this->parse_request( $query_args );
+
+		var_dump($parsed);
 
 		$this->send_headers();
 
