@@ -364,7 +364,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 ?>
 
 <div class="wrap">
-<h1 class="wp-heading-inline"><?php _e( 'Sites' ); ?></h1>
+<h1 class="wp-heading-inline h"><?php _e( 'Sites' ); ?></h1>
 
 <?php if ( current_user_can( 'create_sites' ) ) : ?>
 	<a href="<?php echo esc_url( network_admin_url( 'site-new.php' ) ); ?>" class="page-title-action"><?php echo esc_html_x( 'Add New', 'site' ); ?></a>

@@ -94,7 +94,7 @@ class ListTable extends WP_List_Table {
 		// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		echo "
 			<div class='wrap'>
-				<h1 class='wp-heading-inline'>{$title}</h1>
+				<h1 class='wp-heading-inline n'>{$title}</h1>
 				<a href='/to-implement' class='page-title-action'>{$add_new}</a>
 				<hr class='wp-header-end'>
 		";

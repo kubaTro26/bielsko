@@ -644,7 +644,7 @@ abstract class ActionScheduler_Abstract_ListTable extends WP_List_Table {
 	 * Display the table heading and search query, if any
 	 */
 	protected function display_header() {
-		echo '<h1 class="wp-heading-inline">' . esc_attr( $this->table_header ) . '</h1>';
+		echo '<h1 class="wp-heading-inline o">' . esc_attr( $this->table_header ) . '</h1>';
 		if ( $this->get_request_search_query() ) {
 			/* translators: %s: search query */
 			echo '<span class="subtitle">' . esc_attr( sprintf( __( 'Search results for "%s"', 'action-scheduler' ), $this->get_request_search_query() ) ) . '</span>';

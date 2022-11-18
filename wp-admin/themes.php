@@ -247,7 +247,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 ?>
 
 <div class="wrap">
-	<h1 class="wp-heading-inline"><?php esc_html_e( 'Themes' ); ?>
+	<h1 class="wp-heading-inline e"><?php esc_html_e( 'Themes' ); ?>
 		<span class="title-count theme-count"><?php echo ! empty( $_GET['search'] ) ? __( '&hellip;' ) : count( $themes ); ?></span>
 	</h1>
 

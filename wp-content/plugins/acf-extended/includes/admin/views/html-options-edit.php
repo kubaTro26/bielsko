@@ -5,7 +5,7 @@
     if($_REQUEST['action'] === 'add')
         $title = __('Add Option');
     ?>
-    <h1 class="wp-heading-inline"><?php echo $title; ?></h1>
+    <h1 class="wp-heading-inline k"><?php echo $title; ?></h1>
     
     <hr class="wp-header-end" />
     

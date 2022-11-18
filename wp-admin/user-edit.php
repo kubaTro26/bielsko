@@ -42,10 +42,10 @@ if ( IS_PROFILE_PAGE ) {
 }
 //dumping21
 if ( current_user_can( 'edit_users' ) && ! IS_PROFILE_PAGE ) {
-	echo 'can';
+	//dumping21
 	$submenu_file = 'users.php';
 } else {
-	echo 'can not';
+	
 	$submenu_file = 'profile.php';
 }
 

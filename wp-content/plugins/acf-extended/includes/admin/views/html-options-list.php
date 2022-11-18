@@ -1,6 +1,6 @@
 <div class="wrap" id="acfe-admin-options">
 
-    <h1 class="wp-heading-inline"><?php _e('Options'); ?></h1>
+    <h1 class="wp-heading-inline l"><?php _e('Options'); ?></h1>
     <a href="<?php echo sprintf('?page=%s&action=add', esc_attr($_REQUEST['page'])); ?>" class="page-title-action"><?php _e('Add New'); ?></a>
     
     <hr class="wp-header-end" />
